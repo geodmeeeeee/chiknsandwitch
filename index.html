@@ -15,6 +15,23 @@
         <input id="search" type="search" placeholder="Search games..." autocomplete="off">
         <span class="search-icon" aria-hidden="true">⌕</span>
       </div>
+      <div class="filter-control">
+        <button id="filterToggle" class="filter-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterPanel">Filter</button>
+        <dialog id="filterPanel" class="filter-dialog" aria-labelledby="filterHeading">
+          <div class="filter-dialog-header">
+            <h2 id="filterHeading">Categories</h2>
+            <button id="filterClose" class="filter-close" type="button">Close</button>
+          </div>
+          <fieldset>
+            <legend class="sr-only">Choose categories</legend>
+            <div id="filterOptions" class="filter-options"></div>
+          </fieldset>
+          <div class="filter-actions">
+            <button id="clearFilters" class="clear-filters" type="button">Clear filters</button>
+            <button id="filterDone" class="filter-done" type="button">Done</button>
+          </div>
+        </dialog>
+      </div>
       <button id="changelogOpen" class="changelog-open" type="button" aria-haspopup="dialog" aria-controls="changelogDialog">Changelog</button>
     </div>
 
