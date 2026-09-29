@@ -94,6 +94,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Plants VS Zombies",
+    image: "images/Plants VS Zombies.jpg",
+    url: "games/Plants VS Zombies/index.html",
+    tags: ["strategy"]
+  },
+  {
     title: "Polytrack",
     image: "images/polytrack.jpg",
     url: "games/polytrack/index.html",
@@ -116,6 +122,12 @@ const games = [
     image: "images/Retro Bowl.jpg",
     url: "games/Retro Bowl/index.html",
     tags: ["sports"]
+  },
+  {
+    title: "Rooftop Snipers",
+    image: "images/Rooftop Snipers.jpg",
+    url: "games/Rooftop Snipers/index.html",
+    tags: ["shooter","platformer","multiplayer"]
   },
   {
     title: "Run",
