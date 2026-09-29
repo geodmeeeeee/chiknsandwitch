@@ -64,6 +64,12 @@ const games = [
     tags: ["platformer", "shooter", "multiplayer"]
   },
   {
+    title: "Monkey Mart",
+    image: "images/Monkey Mart.jpg",
+    url: "games/Monkey Mart/index.html",
+    tags: ["tycoon"]
+  },
+  {
     title: "Polytrack",
     image: "images/polytrack.jpg",
     url: "games/polytrack/index.html",
