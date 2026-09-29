@@ -69,6 +69,12 @@ const games = [
     url: "games/Monkey Mart/index.html",
     tags: ["tycoon"]
   },
+    {
+    title: "Moto X3M",
+    image: "images/Moto X3M.jpg",
+    url: "games/Moto X3M/index.html",
+    tags: ["driving"]
+  },
   {
     title: "Polytrack",
     image: "images/polytrack.jpg",
