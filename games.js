@@ -19,6 +19,11 @@ const games = [
     url: "games/Bacon May Die/index.html"
   },
   {
+    title: "Basketball Stars",
+    image: "images/Basketball Stars.jpg",
+    url: "games/Basketball Stars/index.html"
+  },
+  {
     title: "Boxing random",
     image: "images/Boxing random.jpg",
     url: "games/Boxing Random/index.html"
@@ -29,9 +34,24 @@ const games = [
     url: "games/Cookie Clicker/index.html"
   },
   {
+    title: "Drift Boss",
+    image: "images/Drift Boss.jpg",
+    url: "games/Drift Boss/index.html"
+  },
+  {
     title: "Drive Mad",
     image: "images/Drive Mad.jpg",
     url: "games/Drive Mad/index.html"
+  },
+  {
+    title: "Eggy Car",
+    image: "images/Eggy Car.jpg",
+    url: "games/Eggy Car/index.html"
+  },
+  {
+    title: "Getaway Shootout",
+    image: "images/Getaway Shootout.jpg",
+    url: "games/Getaway Shootout/index.html"
   },
   {
     title: "Polytrack",
