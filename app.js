@@ -22,10 +22,11 @@ function escapeHtml(value) {
   }[char]));
 }
 
-function card(game, index) {
+function card(game, index, animate = false) {
   const title = escapeHtml(game.title);
   const url = escapeHtml(game.url || "#");
   const tags = Array.isArray(game.tags) ? game.tags : [];
+  const animation = animate ? ` class="game-image game-image--pop" style="--pop-delay: ${Math.min(index * 45, 540)}ms"` : ` class="game-image"`;
 
   const image = game.image
     ? `<img src="${escapeHtml(game.image)}" alt="" loading="lazy">`
@@ -33,15 +34,15 @@ function card(game, index) {
 
   return `
     <a class="game-card" href="${url}" aria-label="Play ${title}">
-      <div class="game-image">${image}</div>
+      <div${animation}>${image}</div>
       <h2 class="game-title">${title}</h2>
       ${tags.length ? `<div class="game-tags">${tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
     </a>
   `;
 }
 
-function render(list) {
-  grid.innerHTML = list.map(card).join("");
+function render(list, animate = false) {
+  grid.innerHTML = list.map((game, index) => card(game, index, animate)).join("");
   emptyState.hidden = list.length !== 0;
 }
 
@@ -135,4 +136,4 @@ filterPanel.addEventListener("close", () => {
   filterToggle.setAttribute("aria-expanded", "false");
 });
 buildFilterOptions();
-render(games);
+render(games, true);
