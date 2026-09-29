@@ -76,6 +76,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "OvO",
+    image: "images/OvO.jpg",
+    url: "games/OvO/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Polytrack",
     image: "images/polytrack.jpg",
     url: "games/polytrack/index.html",
