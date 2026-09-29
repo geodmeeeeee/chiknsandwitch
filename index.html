@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple game grid">
+  <title>Games</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <div class="search-toolbar">
+      <div class="search-wrap">
+        <label class="sr-only" for="search">Search games</label>
+        <input id="search" type="search" placeholder="Search games..." autocomplete="off">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+      </div>
+      <button id="changelogOpen" class="changelog-open" type="button" aria-haspopup="dialog" aria-controls="changelogDialog">Changelog</button>
+    </div>
+
+    <dialog id="changelogDialog" class="changelog-dialog" aria-labelledby="changelogHeading">
+      <button id="changelogClose" class="changelog-close" type="button">Close</button>
+      <h2 id="changelogHeading">Changelog</h2>
+      <pre id="changelogText" class="changelog-document">Loading changelog...</pre>
+    </dialog>
+
+    <div id="gameGrid" class="game-grid" aria-live="polite"></div>
+
+    <div id="emptyState" class="empty-state" hidden>No games found.</div>
+  </main>
+
+  <script src="games.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

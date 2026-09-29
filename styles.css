@@ -1,0 +1,218 @@
+:root {
+  --bg: #0b0d12;
+  --surface: #141820;
+  --surface-hover: #1b202b;
+  --border: #252b37;
+  --text: #f4f5f8;
+  --muted: #9aa1af;
+  --accent: #7c5cff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.container {
+  width: min(1400px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 50px;
+}
+
+.search-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(520px, 100%);
+  margin: 0 auto 30px;
+}
+
+.changelog-open {
+  flex: none;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.changelog-open:hover { background: var(--surface-hover); }
+
+.changelog-dialog {
+  width: min(620px, calc(100% - 32px));
+  max-height: min(75vh, 700px);
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 12px;
+  background: rgba(20, 24, 32, .92);
+  color: var(--text);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .4);
+  backdrop-filter: blur(12px);
+}
+
+.changelog-dialog::backdrop {
+  background: rgba(0, 0, 0, .66);
+  backdrop-filter: blur(2px);
+}
+
+.changelog-close {
+  margin: 0 0 18px;
+  padding: 7px 11px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, .04);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.changelog-dialog h2 {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+}
+
+.changelog-document {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--text);
+  font: inherit;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.search-wrap {
+  position: relative;
+  font: inherit;
+  flex: 1;
+  min-width: 0;
+}
+
+.search-wrap input {
+  width: 100%;
+  height: 44px;
+  padding: 0 44px 0 15px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.search-wrap input::placeholder { color: #6f7684; }
+
+.search-wrap input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(124, 92, 255, .12);
+}
+
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-52%);
+  color: var(--muted);
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  gap: 16px;
+}
+
+.game-card {
+  overflow: hidden;
+  border-radius: 13px;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: transform .18s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-3px);
+}
+
+.game-card:focus-visible .game-title {
+  color: var(--accent);
+}
+
+.game-image {
+  width: min(225px, 100%);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #191e27;
+  margin-inline: auto;
+  border-radius: 12px;
+}
+
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder-art {
+  font-size: 2.5rem;
+  opacity: .65;
+}
+
+.game-title {
+  margin: 0;
+  padding: 9px 11px 11px;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 20px, 1400px);
+    padding-top: 18px;
+  }
+
+  .game-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(145px, 100%), 1fr));
+    gap: 11px;
+  }
+
+  .game-title {
+    font-size: .94rem;
+    padding: 8px 9px 10px;
+  }
+}
