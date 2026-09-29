@@ -9,11 +9,17 @@
 */
 
 const games = [
-   {
+  {
     title: "10 Minutes Till Dawn",
     image: "images/10 Minutes Till Dawn.jpg",
     url: "games/10 Minutes Till Dawn/index.html",
     tags: ["shooter"]
+  },
+  {
+    title: "2048",
+    image: "images/2048.jpg",
+    url: "games/2048/index.html",
+    tags: ["puzzle"]
   },
   {
     title: "Bacon May Die",
@@ -103,6 +109,12 @@ const games = [
     title: "Run 2",
     image: "images/Run 2.jpg",
     url: "games/Run 2/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Run 3",
+    image: "images/Run 3.jpg",
+    url: "games/Run 3/index.html",
     tags: ["platformer"]
   },  
   {
