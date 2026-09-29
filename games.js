@@ -29,6 +29,11 @@ const games = [
     url: "games/Cookie Clicker/index.html"
   },
   {
+    title: "Drive Mad",
+    image: "images/Drive Mad.jpg",
+    url: "games/Drive Mad/index.html"
+  },
+  {
     title: "Polytrack",
     image: "images/polytrack.jpg",
     url: "games/polytrack/index.html"
