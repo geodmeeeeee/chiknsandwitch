@@ -46,6 +46,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Crossy Road",
+    image: "images/Crossy Road.jpg",
+    url: "games/Crossy Road/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Drift Boss",
     image: "images/Drift Boss.jpg",
     url: "games/Drift Boss/index.html",
@@ -92,6 +98,12 @@ const games = [
     image: "images/polytrack.jpg",
     url: "games/polytrack/index.html",
     tags: ["driving"]
+  },
+  {
+    title: "Ragdoll Archers",
+    image: "images/Ragdoll Archers.jpg",
+    url: "games/Ragdoll Archers/index.html",
+    tags: ["puzzle"]
   },
   {
     title: "Retro Bowl",
