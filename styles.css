@@ -114,7 +114,8 @@ body {
   .filter-dialog.is-closing::backdrop,
   .changelog-dialog.is-closing::backdrop { animation-duration: .01ms; }
 
-  .game-image--pop { animation: none; }
+  .game-image--pop,
+  .game-image--page { animation: none; }
 }
 
 .filter-dialog fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
@@ -257,6 +258,71 @@ body {
   gap: 16px;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0 0;
+}
+
+.pagination[hidden] { display: none; }
+
+.page-arrow,
+.page-number {
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.page-number { min-width: 38px; padding-inline: 8px; }
+
+.page-number.is-current {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.page-arrow:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: .55;
+}
+
+.page-numbers,
+.page-jump {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-ellipsis { padding: 0 2px; color: var(--muted); }
+
+.page-jump {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.page-jump input {
+  width: 64px;
+  height: 38px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.page-arrow:not(:disabled):hover,
+.page-number:not(.is-current):hover { background: var(--surface-hover); }
+
 .game-card {
   overflow: hidden;
   border-radius: 13px;
@@ -291,10 +357,20 @@ body {
   animation-delay: var(--pop-delay, 0ms);
 }
 
+.game-image--page {
+  animation: page-pop 260ms ease-out both;
+  animation-delay: var(--pop-delay, 0ms);
+}
+
 @keyframes icon-pop {
   from { opacity: 0; transform: translateY(18px) scale(.65) rotate(-4deg); }
   72% { opacity: 1; transform: translateY(-4px) scale(1.04) rotate(1deg); }
   to { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+}
+
+@keyframes page-pop {
+  from { opacity: 0; transform: translateY(8px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .game-image img {
@@ -371,4 +447,6 @@ body {
     font-size: .94rem;
     padding: 8px 9px 10px;
   }
+
+  .page-jump { margin-left: 0; }
 }

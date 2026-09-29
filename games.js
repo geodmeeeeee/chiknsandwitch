@@ -152,5 +152,11 @@ const games = [
     image: "images/Slope.jpg",
     url: "games/Slope/index.html",
     tags: ["platformer"]
+  },
+  {
+    title: "Tiny Fishing",
+    image: "images/Tiny Fishing.jpg",
+    url: "games/Tiny Fishing/index.html",
+    tags: ["simulation"]
   }
 ];

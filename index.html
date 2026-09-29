@@ -43,6 +43,17 @@
 
     <div id="gameGrid" class="game-grid" aria-live="polite"></div>
 
+    <nav id="pagination" class="pagination" aria-label="Game pages" hidden>
+      <button id="previousPage" class="page-arrow" type="button" aria-label="Previous page">Previous</button>
+      <div id="pageNumbers" class="page-numbers" aria-label="Pages"></div>
+      <button id="nextPage" class="page-arrow" type="button" aria-label="Next page">Next</button>
+      <div class="page-jump">
+        <label for="pageInput">Go to page</label>
+        <input id="pageInput" type="number" min="1" value="1" required>
+        <span id="pageCount">of 1</span>
+      </div>
+    </nav>
+
     <div id="emptyState" class="empty-state" hidden>No games found.</div>
   </main>
 
