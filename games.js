@@ -106,6 +106,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Ragdoll Hit",
+    image: "images/Ragdoll Hit.jpg",
+    url: "games/Ragdoll Hit/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Retro Bowl",
     image: "images/Retro Bowl.jpg",
     url: "games/Retro Bowl/index.html",
