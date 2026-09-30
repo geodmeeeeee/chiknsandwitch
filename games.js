@@ -82,6 +82,12 @@ const games = [
     tags: ["platformer", "shooter", "multiplayer"]
   },
   {
+    title: "Idle Breakout",
+    image: "images/Idle Breakout.jpg",
+    url: "games/Idle Breakout/index.html",
+    tags: ["clicker"]
+  },
+  {
     title: "Minecraft",
     image: "images/Minecraft.jpg",
     url: "games/Minecraft/index.html",
