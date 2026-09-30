@@ -64,9 +64,9 @@ const games = [
     tags: ["driving"]
   },
   {
-    title: "Egalercraft 26.2",
-    image: "images/Egalercraft 26.2.jpg",
-    url: "games/Egalercraft26.2/index.html",
+    title: "Egalercraft",
+    image: "images/Egalercraft.jpg",
+    url: "games/Egalercraft/index.html",
     tags: ["sandbox"]
   },
   {
