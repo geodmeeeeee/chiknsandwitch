@@ -111,10 +111,22 @@ const games = [
     url: "games/Monkey Mart/index.html",
     tags: ["tycoon"]
   },
-    {
+  {
     title: "Moto X3M",
     image: "images/Moto X3M.jpg",
     url: "games/Moto X3M/index.html",
+    tags: ["driving"]
+  },
+  {
+    title: "Moto X3M 2",
+    image: "images/Moto X3M 2.jpg",
+    url: "games/Moto X3M 2/index.html",
+    tags: ["driving"]
+  },
+  {
+    title: "Moto X3M Pool Party",
+    image: "images/Moto X3M Pool Party.jpg",
+    url: "games/Moto X3M Pool Party/index.html",
     tags: ["driving"]
   },
   {
