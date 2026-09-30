@@ -236,5 +236,11 @@ const games = [
     image: "images/Vex 7.jpg",
     url: "games/Vex 7/index.html",
     tags: ["platformer"]
+  },
+  {
+    title: "We Become What We Behold",
+    image: "images/We Become What We Behold.jpg",
+    url: "games/We Become What We Behold/index.html",
+    tags: ["simulation"]
   }
 ];
