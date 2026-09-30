@@ -82,6 +82,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Escape Road",
+    image: "images/Escape Road.jpg",
+    url: "games/Escape Road/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Getaway Shootout",
     image: "images/Getaway Shootout.jpg",
     url: "games/Getaway Shootout/index.html",
@@ -127,6 +133,12 @@ const games = [
     title: "Moto X3M Pool Party",
     image: "images/Moto X3M Pool Party.jpg",
     url: "games/Moto X3M Pool Party/index.html",
+    tags: ["driving"]
+  },
+  {
+    title: "Moto X3M Spooky Land",
+    image: "images/Moto X3M Spooky Land.jpg",
+    url: "games/Moto X3M Spooky Land/index.html",
     tags: ["driving"]
   },
   {
@@ -206,6 +218,12 @@ const games = [
     image: "images/Stickman Hook.jpg",
     url: "games/Stickman Hook/index.html",
     tags: ["platformer"]
+  },
+  {
+    title: "Table Tennis World Tour",
+    image: "images/Table Tennis World Tour.jpg",
+    url: "games/Table Tennis World Tour/index.html",
+    tags: ["sports"]
   },
   {
     title: "This Is The Only Level",
