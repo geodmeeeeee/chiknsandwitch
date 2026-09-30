@@ -10,6 +10,12 @@
 
 const games = [
   {
+    title: "1 on 1 Soccer",
+    image: "images/1 on 1 Soccer.jpg",
+    url: "games/1 on 1 Soccer/index.html",
+    tags: ["sports", "multiplayer"]
+  },
+  {
     title: "10 Minutes Till Dawn",
     image: "images/10 Minutes Till Dawn.jpg",
     url: "games/10 Minutes Till Dawn/index.html",
@@ -86,6 +92,12 @@ const games = [
     image: "images/Idle Breakout.jpg",
     url: "games/Idle Breakout/index.html",
     tags: ["clicker"]
+  },
+  {
+    title: "Learn To Fly 3",
+    image: "images/Learn To Fly 3.jpg",
+    url: "games/Learn To Fly 3/index.html",
+    tags: ["platformer"]
   },
   {
     title: "Minecraft",
@@ -184,9 +196,21 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Time Shooter 2",
+    image: "images/Time Shooter 2.jpg",
+    url: "games/Time Shooter 2/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Tiny Fishing",
     image: "images/Tiny Fishing.jpg",
     url: "games/Tiny Fishing/index.html",
     tags: ["simulation"]
+  },
+  {
+    title: "Vex 7",
+    image: "images/Vex 7.jpg",
+    url: "games/Vex 7/index.html",
+    tags: ["platformer"]
   }
 ];
