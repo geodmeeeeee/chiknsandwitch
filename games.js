@@ -79,7 +79,7 @@ const games = [
     title: "Minecraft",
     image: "images/Minecraft.jpg",
     url: "games/Minecraft/index.html",
-    tags: ["sandbox"]
+    tags: ["sandbox", "multiplayer"]
   },
   {
     title: "Monkey Mart",
