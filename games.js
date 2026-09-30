@@ -52,6 +52,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Death Run 3D",
+    image: "images/Death Run 3D.jpg",
+    url: "games/Death Run 3D/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Drift Boss",
     image: "images/Drift Boss.jpg",
     url: "games/Drift Boss/index.html",
