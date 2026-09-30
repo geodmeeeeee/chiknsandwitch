@@ -88,6 +88,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Fruit Ninja",
+    image: "images/Fruit Ninja.jpg",
+    url: "games/Fruit Ninja/index.html",
+    tags: ["clicker"]
+  },
+  {
     title: "Getaway Shootout",
     image: "images/Getaway Shootout.jpg",
     url: "games/Getaway Shootout/index.html",
@@ -142,6 +148,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Moto X3M Winter",
+    image: "images/Moto X3M Winter.jpg",
+    url: "games/Moto X3M Winter/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "OvO",
     image: "images/OvO.jpg",
     url: "games/OvO/index.html",
@@ -152,6 +164,12 @@ const games = [
     image: "images/OvO Dimensions.jpg",
     url: "games/OvO Dimensions/index.html",
     tags: ["platformer"]
+  },
+  {
+    title: "Peak",
+    image: "images/Peak.jpg",
+    url: "games/Peak/index.html",
+    tags: ["platformer","sports"]
   },
   {
     title: "Plants VS Zombies",
