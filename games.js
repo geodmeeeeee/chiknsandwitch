@@ -64,12 +64,6 @@ const games = [
     tags: ["driving"]
   },
   {
-    title: "Egalercraft",
-    image: "images/Egalercraft.jpg",
-    url: "games/Egalercraft/index.html",
-    tags: ["sandbox"]
-  },
-  {
     title: "Eggy Car",
     image: "images/Eggy Car.jpg",
     url: "games/Eggy Car/index.html",
@@ -80,6 +74,12 @@ const games = [
     image: "images/Getaway Shootout.jpg",
     url: "games/Getaway Shootout/index.html",
     tags: ["platformer", "shooter", "multiplayer"]
+  },
+  {
+    title: "Minecraft",
+    image: "images/Minecraft.jpg",
+    url: "games/Minecraft/index.html",
+    tags: ["sandbox"]
   },
   {
     title: "Monkey Mart",

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eaglercraft Version Selector</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            padding: 30px;
+            background: #1c1c1c;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin: 20px 0;
+            background: #292929;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Eaglercraft</h1>
+
+    <select id="versionSelect">
+        <!-- Versions are automatically added here -->
+    </select>
+
+    <button onclick="launchVersion()">
+        Launch
+    </button>
+</div>
+
+<script>
+
+    /*
+        =====================================================
+        ADD NEW VERSIONS HERE
+        =====================================================
+
+        Just copy one of these lines and change the name/file.
+
+        Example:
+
+        {
+            name: "1.20.1",
+            file: "versions/1.20.1.html"
+        }
+
+    */
+
+    const versions = [
+
+        {
+            name: "Eaglercraft 26.2",
+            file: "versions/26.2.html"
+        },
+
+        {
+            name: "Eaglercraft 1.12.2",
+            file: "versions/1.12.2.html"
+        },
+
+        {
+            name: "Eaglercraft 1.8.8",
+            file: "versions/1.8.8.html"
+        },
+
+        {
+            name: "Eaglercraft 1.8.1",
+            file: "versions/1.8.1.html"
+        },
+
+        {
+            name: "Eaglercraft 1.5.2",
+            file: "versions/1.5.2.html"
+        },
+
+
+        {
+            name: "Eaglercraft 1.2.5",
+            file: "versions/1.2.5.html"
+        }
+
+    ];
+
+
+    // Create the dropdown
+    const selector = document.getElementById("versionSelect");
+
+    versions.forEach(version => {
+
+        const option = document.createElement("option");
+
+        option.textContent = version.name;
+        option.value = version.file;
+
+        selector.appendChild(option);
+
+    });
+
+
+    // Launch selected version
+    function launchVersion() {
+
+        const file = selector.value;
+
+        if (!file) {
+            return;
+        }
+
+        window.location.href = file;
+
+    }
+
+</script>
+
+</body>
+</html>
