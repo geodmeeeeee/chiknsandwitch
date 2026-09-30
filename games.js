@@ -178,6 +178,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Stickman Hook",
+    image: "images/Stickman Hook.jpg",
+    url: "games/Stickman Hook/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Tiny Fishing",
     image: "images/Tiny Fishing.jpg",
     url: "games/Tiny Fishing/index.html",
