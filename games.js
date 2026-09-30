@@ -214,6 +214,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Time Shooter 3 S.W.A.T",
+    image: "images/Time Shooter 3 S.W.A.T.jpg",
+    url: "games/Time Shooter 3 S.W.A.T/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Tiny Fishing",
     image: "images/Tiny Fishing.jpg",
     url: "games/Tiny Fishing/index.html",
