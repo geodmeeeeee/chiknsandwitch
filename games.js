@@ -40,6 +40,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "Bloxorz",
+    image: "images/Bloxorz.jpg",
+    url: "games/Bloxorz/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Boxing random",
     image: "images/Boxing random.jpg",
     url: "games/Boxing Random/index.html",
@@ -88,10 +94,22 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Football Legends",
+    image: "images/Football Legends.jpg",
+    url: "games/Football Legends/index.html",
+    tags: ["sports"]
+  },
+  {
     title: "Fruit Ninja",
     image: "images/Fruit Ninja.jpg",
     url: "games/Fruit Ninja/index.html",
     tags: ["clicker"]
+  },
+  {
+    title: "Geometry Dash",
+    image: "images/Geometry Dash.jpg",
+    url: "games/Geometry Dash/index.html",
+    tags: ["clicker","platformer"]
   },
   {
     title: "Getaway Shootout",
