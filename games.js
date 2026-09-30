@@ -46,6 +46,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Bob The Robber 2",
+    image: "images/Bob The Robber 2.jpg",
+    url: "games/Bob The Robber 2/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Boxing random",
     image: "images/Boxing random.jpg",
     url: "games/Boxing Random/index.html",
