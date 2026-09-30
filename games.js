@@ -112,6 +112,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "OvO Dimensions",
+    image: "images/OvO Dimensions.jpg",
+    url: "games/OvO Dimensions/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Plants VS Zombies",
     image: "images/Plants VS Zombies.jpg",
     url: "games/Plants VS Zombies/index.html",
