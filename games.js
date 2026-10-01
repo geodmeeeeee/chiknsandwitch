@@ -292,9 +292,21 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Vex 4",
+    image: "images/Vex 4.jpg",
+    url: "games/Vex 4/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Vex 7",
     image: "images/Vex 7.jpg",
     url: "games/Vex 7/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Vex 8",
+    image: "images/Vex 8.jpg",
+    url: "games/Vex 8/index.html",
     tags: ["platformer"]
   },
   {
