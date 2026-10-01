@@ -40,6 +40,18 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "Bloons Tower Defense",
+    image: "images/Bloons Tower Defense.jpg",
+    url: "games/Bloons Tower Defense/index.html",
+    tags: ["strategy"]
+  },
+  {
+    title: "Bloons Tower Defense 2",
+    image: "images/Bloons Tower Defense 2.jpg",
+    url: "games/Bloons Tower Defense 2/index.html",
+    tags: ["strategy"]
+  },
+  {
     title: "Bloxorz",
     image: "images/Bloxorz.jpg",
     url: "games/Bloxorz/index.html",
@@ -74,6 +86,12 @@ const games = [
     image: "images/Death Run 3D.jpg",
     url: "games/Death Run 3D/index.html",
     tags: ["platformer"]
+  },
+  {
+    title: "Deltarune",
+    image: "images/Deltarune.jpg",
+    url: "games/Deltarune/index.html",
+    tags: ["platformer", "puzzle"]
   },
   {
     title: "Drift Boss",
