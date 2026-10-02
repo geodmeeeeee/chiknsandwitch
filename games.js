@@ -76,6 +76,18 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Crazy Cars",
+    image: "images/Crazy Cars.jpg",
+    url: "games/Crazy Cars/index.html",
+    tags: ["driving"]
+  },
+  {
+    title: "Crazy Cattle 3D",
+    image: "images/Crazy Cattle 3D.jpg",
+    url: "games/Crazy Cattle 3D/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Crossy Road",
     image: "images/Crossy Road.jpg",
     url: "games/Crossy Road/index.html",
