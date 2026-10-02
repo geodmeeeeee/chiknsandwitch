@@ -64,10 +64,22 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Bouncy Motors",
+    image: "images/Bouncy Motors.jpg",
+    url: "games/Bouncy Motors/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Boxing random",
     image: "images/Boxing random.jpg",
     url: "games/Boxing Random/index.html",
     tags: ["sports", "multiplayer"]
+  },
+  {
+    title: "Capybara Clicker",
+    image: "images/Capybara Clicker.jpg",
+    url: "games/Capybara Clicker/index.html",
+    tags: ["clicker"]
   },
   {
     title: "Cookie Clicker",
