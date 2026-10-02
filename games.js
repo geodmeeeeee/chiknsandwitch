@@ -286,6 +286,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Subway Surfers Beijing",
+    image: "images/Subway Surfers Beijing.jpg",
+    url: "games/Subway Surfers Beijing/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Table Tennis World Tour",
     image: "images/Table Tennis World Tour.jpg",
     url: "games/Table Tennis World Tour/index.html",
