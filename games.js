@@ -364,6 +364,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Slow Roads",
+    image: "images/Slow Roads.jpg",
+    url: "games/Slow Roads/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Space Waves",
     image: "images/Space Waves.jpg",
     url: "games/Space Waves/index.html",
