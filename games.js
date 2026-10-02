@@ -208,6 +208,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Parking Fury",
+    image: "images/Parking Fury.jpg",
+    url: "games/Parking Fury/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Peak",
     image: "images/Peak.jpg",
     url: "games/Peak/index.html",
