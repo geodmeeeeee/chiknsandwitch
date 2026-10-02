@@ -220,6 +220,18 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Papas Bakeria",
+    image: "images/Papas Bakeria.jpg",
+    url: "games/Papas Bakeria/index.html",
+    tags: ["simulation"]
+  },
+  {
+    title: "Papas Burgeria",
+    image: "images/Papas Burgeria.jpg",
+    url: "games/Papas Burgeria/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Parking Fury",
     image: "images/Parking Fury.jpg",
     url: "games/Parking Fury/index.html",
