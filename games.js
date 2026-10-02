@@ -214,6 +214,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Parking Fury 2",
+    image: "images/Parking Fury 2.jpg",
+    url: "games/Parking Fury 2/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Peak",
     image: "images/Peak.jpg",
     url: "games/Peak/index.html",
@@ -277,6 +283,12 @@ const games = [
     title: "Slope",
     image: "images/Slope.jpg",
     url: "games/Slope/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Space Waves",
+    image: "images/Space Waves.jpg",
+    url: "games/Space Waves/index.html",
     tags: ["platformer"]
   },
   {
