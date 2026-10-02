@@ -40,6 +40,18 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "Bitplanes",
+    image: "images/Bitplanes.jpg",
+    url: "games/Bitplanes/index.html",
+    tags: ["simulation"]
+  },
+  {
+    title: "Blocky Snakes",
+    image: "images/Blocky Snakes.jpg",
+    url: "games/Blocky Snakes/index.html",
+    tags: ["multiplayer"]
+  },
+  {
     title: "Bloons Tower Defense",
     image: "images/Bloons Tower Defense.jpg",
     url: "games/Bloons Tower Defense/index.html",
