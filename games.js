@@ -316,6 +316,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Speed Stars",
+    image: "images/Speed Stars.jpg",
+    url: "games/Speed Stars/index.html",
+    tags: ["sports"]
+  },
+  {
     title: "Stickman Hook",
     image: "images/Stickman Hook.jpg",
     url: "games/Stickman Hook/index.html",
@@ -355,6 +361,12 @@ const games = [
     title: "Tiny Fishing",
     image: "images/Tiny Fishing.jpg",
     url: "games/Tiny Fishing/index.html",
+    tags: ["simulation"]
+  },
+  {
+    title: "Tomb Of The Mask",
+    image: "images/Tomb Of The Mask.jpg",
+    url: "games/Tomb Of The Mask/index.html",
     tags: ["simulation"]
   },
   {
