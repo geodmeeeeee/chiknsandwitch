@@ -118,6 +118,18 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Duck Life 3",
+    image: "images/Duck Life 3.jpg",
+    url: "games/Duck Life 3/index.html",
+    tags: ["simulation"]
+  },
+  {
+    title: "Duck Life 4",
+    image: "images/Duck Life 4.jpg",
+    url: "games/Duck Life 4/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Eggy Car",
     image: "images/Eggy Car.jpg",
     url: "games/Eggy Car/index.html",
