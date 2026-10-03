@@ -178,6 +178,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Core Ball",
+    image: "images/Core Ball.jpg",
+    url: "games/Core Ball/index.html",
+    tags: ["clicker"]
+  },
+  {
     title: "Crazy Cars",
     image: "images/Crazy Cars.jpg",
     url: "games/Crazy Cars/index.html",
