@@ -16,10 +16,28 @@ const games = [
     tags: ["sports", "multiplayer"]
   },
   {
+    title: "2 Minute Football",
+    image: "images/2 Minute Football.jpg",
+    url: "games/2 Minute Football/index.html",
+    tags: ["sports"]
+  },
+  {
     title: "10 Minutes Till Dawn",
     image: "images/10 Minutes Till Dawn.jpg",
     url: "games/10 Minutes Till Dawn/index.html",
     tags: ["shooter"]
+  },
+  {
+    title: "40xEscape",
+    image: "images/40xEscape.jpg",
+    url: "games/40xEscape/index.html",
+    tags: ["puzzle"]
+  },
+  {
+    title: "60 Second Burger Run",
+    image: "images/60 Second Burger Run.jpg",
+    url: "games/60 Second Burger Run/index.html",
+    tags: ["platformer"]
   },
   {
     title: "2048",
@@ -28,9 +46,51 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "A Dance Of Fire And Ice",
+    image: "images/A Dance Of Fire And Ice.jpg",
+    url: "games/A Dance Of Fire And Ice/index.html",
+    tags: ["rythm"]
+  },
+  {
+    title: "Achievement Unlocked",
+    image: "images/Achievement Unlocked.jpg",
+    url: "games/Achievement Unlocked/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Achievement Unlocked 2",
+    image: "images/Achievement Unlocked 2.jpg",
+    url: "games/Achievement Unlocked 2/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Achievement Unlocked 3",
+    image: "images/Achievement Unlocked 3.jpg",
+    url: "games/Achievement Unlocked 3/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Adventure capitalist",
+    image: "images/Adventure Capitalist.jpg",
+    url: "games/Adventure Capitalist/index.html",
+    tags: ["clicker"]
+  },
+  {
+    title: "Adventure Drivers",
+    image: "images/Adventure Drivers.jpg",
+    url: "games/Adventure Drivers/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Bacon May Die",
     image: "images/Bacon May Die.jpg",
     url: "games/Bacon May Die/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Bad Piggies",
+    image: "images/Bad Piggies.jpg",
+    url: "games/Bad Piggies/index.html",
     tags: ["platformer"]
   },
   {
@@ -44,6 +104,12 @@ const games = [
     image: "images/Bitplanes.jpg",
     url: "games/Bitplanes/index.html",
     tags: ["simulation"]
+  },
+  {
+    title: "Block Blast",
+    image: "images/Block Blast.jpg",
+    url: "games/Block Blast/index.html",
+    tags: ["puzzle"]
   },
   {
     title: "Blocky Snakes",
@@ -94,6 +160,18 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Choppy Orc",
+    image: "images/Choppy Orc.jpg",
+    url: "games/Choppy Orc/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Cluster Rush",
+    image: "images/Cluster Rush.jpg",
+    url: "games/Cluster Rush/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Cookie Clicker",
     image: "images/Cookie Clicker.jpg",
     url: "games/Cookie Clicker/index.html",
@@ -116,6 +194,12 @@ const games = [
     image: "images/Crossy Road.jpg",
     url: "games/Crossy Road/index.html",
     tags: ["platformer"]
+  },
+  {
+    title: "Cyber Cars Punk Racing",
+    image: "images/Cyber Cars Punk Racing.jpg",
+    url: "games/Cyber Cars Punk Racing/index.html",
+    tags: ["driving"]
   },
   {
     title: "Death Run 3D",
