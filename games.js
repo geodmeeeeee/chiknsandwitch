@@ -94,6 +94,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Baldis Basics",
+    image: "images/Baldis Basics.jpg",
+    url: "games/Baldis Basics/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Basketball Stars",
     image: "images/Basketball Stars.jpg",
     url: "games/Basketball Stars/index.html",
