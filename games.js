@@ -130,6 +130,12 @@ const games = [
     tags: ["strategy"]
   },
   {
+    title: "Bloons Tower Defense 3",
+    image: "images/Bloons Tower Defense 3.jpg",
+    url: "games/Bloons Tower Defense 3/index.html",
+    tags: ["strategy"]
+  },
+  {
     title: "Bloxorz",
     image: "images/Bloxorz.jpg",
     url: "games/Bloxorz/index.html",
