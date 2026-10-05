@@ -544,6 +544,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "War The Knights",
+    image: "images/War The Knights.jpg",
+    url: "games/War The Knights/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "We Become What We Behold",
     image: "images/We Become What We Behold.jpg",
     url: "games/We Become What We Behold/index.html",
