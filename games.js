@@ -142,6 +142,12 @@ const games = [
     tags: ["strategy"]
   },
   {
+    title: "Bloons Tower Defense 4",
+    image: "images/Bloons Tower Defense 4.jpg",
+    url: "games/Bloons Tower Defense 4/index.html",
+    tags: ["strategy"]
+  },
+  {
     title: "Bloons Tower Defense 5",
     image: "images/Bloons Tower Defense 5.jpg",
     url: "games/Bloons Tower Defense 5/index.html",
