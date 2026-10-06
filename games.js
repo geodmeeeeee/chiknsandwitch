@@ -220,6 +220,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Crazy Motorcycle",
+    image: "images/Crazy Motorcycle.jpg",
+    url: "games/Crazy Motorcycle/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Crossy Road",
     image: "images/Crossy Road.jpg",
     url: "games/Crossy Road/index.html",
