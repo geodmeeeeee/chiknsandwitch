@@ -496,6 +496,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Spacebar Clicker",
+    image: "images/Spacebar Clicker.jpg",
+    url: "games/Spacebar Clicker/index.html",
+    tags: ["clicker"]
+  },
+  {
     title: "Speed Stars",
     image: "images/Speed Stars.jpg",
     url: "games/Speed Stars/index.html",
