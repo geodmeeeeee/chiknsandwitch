@@ -514,6 +514,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Super Mario 64",
+    image: "images/Super Mario 64.jpg",
+    url: "games/Super Mario 64/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Table Tennis World Tour",
     image: "images/Table Tennis World Tour.jpg",
     url: "games/Table Tennis World Tour/index.html",
