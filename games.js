@@ -412,12 +412,6 @@ const games = [
     tags: ["driving"]
   },
   {
-    title: "Parking Fury 3",
-    image: "images/Parking Fury 3.jpg",
-    url: "games/Parking Fury 3/index.html",
-    tags: ["driving"]
-  },
-  {
     title: "Peak",
     image: "images/Peak.jpg",
     url: "games/Peak/index.html",
