@@ -88,6 +88,12 @@ const games = [
     tags: ["strategy"]
   },
   {
+    title: "Age Of War 2",
+    image: "images/Age Of War 2.jpg",
+    url: "games/Age Of War 2/index.html",
+    tags: ["strategy"]
+  },
+  {
     title: "Bacon May Die",
     image: "images/Bacon May Die.jpg",
     url: "games/Bacon May Die/index.html",
@@ -182,6 +188,12 @@ const games = [
     image: "images/Boxing random.jpg",
     url: "games/Boxing Random/index.html",
     tags: ["sports", "multiplayer"]
+  },
+  {
+    title: "Candy Crush",
+    image: "images/Candy Crush.jpg",
+    url: "games/Candy Crush/index.html",
+    tags: ["simulation"]
   },
   {
     title: "Capybara Clicker",
