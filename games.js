@@ -238,6 +238,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Dad N Me",
+    image: "images/Dad N Me.jpg",
+    url: "games/Dad N Me/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "Death Run 3D",
     image: "images/Death Run 3D.jpg",
     url: "games/Death Run 3D/index.html",
