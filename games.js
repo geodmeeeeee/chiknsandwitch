@@ -430,6 +430,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "Hobo 4 Total War",
+    image: "images/Hobo 4 Total War.jpg",
+    url: "games/Hobo 4 Total War/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "House Of Hazards",
     image: "images/House Of Hazards.jpg",
     url: "games/House Of Hazards/index.html",
