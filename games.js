@@ -346,6 +346,12 @@ const games = [
     tags: ["platformer", "shooter", "multiplayer"]
   },
   {
+    title: "Gladihoppers",
+    image: "images/Gladihoppers.jpg",
+    url: "games/Gladihoppers/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "Gunspin",
     image: "images/Gunspin.jpg",
     url: "games/Gunspin/index.html",
