@@ -430,6 +430,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "House Of Hazards",
+    image: "images/House Of Hazards.jpg",
+    url: "games/House Of Hazards/index.html",
+    tags: ["simulation","multiplayer"]
+  },
+  {
     title: "Idle Breakout",
     image: "images/Idle Breakout.jpg",
     url: "games/Idle Breakout/index.html",
