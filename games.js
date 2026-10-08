@@ -370,6 +370,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "Gun Mayhem 2",
+    image: "images/Gun Mayhem 2.jpg",
+    url: "games/Gun Mayhem 2/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Gun Mayhem 3",
     image: "images/Gun Mayhem 3.jpg",
     url: "games/Gun Mayhem 3/index.html",
