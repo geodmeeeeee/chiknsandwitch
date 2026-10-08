@@ -406,6 +406,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Highway Bike Simulator",
+    image: "images/Highway Bike Simulator.jpg",
+    url: "games/Highway Bike Simulator/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Hobo",
     image: "images/Hobo.jpg",
     url: "games/Hobo/index.html",
