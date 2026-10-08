@@ -150,7 +150,7 @@ function closeGamePlayer() {
 }
 
 function syncFullscreenButton() {
-  const isFullscreen = document.fullscreenElement === gamePlayer || gamePlayer.classList.contains("is-fullscreen");
+  const isFullscreen = document.fullscreenElement === gameFrame || gamePlayer.classList.contains("is-fullscreen");
   gameFullscreen.textContent = isFullscreen ? "Exit fullscreen" : "Fullscreen";
   gameFullscreen.setAttribute("aria-label", isFullscreen ? "Exit fullscreen" : "Enter fullscreen");
 }
@@ -212,6 +212,15 @@ gamePlayer.addEventListener("click", event => {
 });
 gamePlayer.addEventListener("cancel", event => {
   event.preventDefault();
+  if (gamePlayer.classList.contains("is-fullscreen")) {
+    gamePlayer.classList.remove("is-fullscreen");
+    syncFullscreenButton();
+    return;
+  }
+  if (document.fullscreenElement === gameFrame) {
+    document.exitFullscreen();
+    return;
+  }
   closeGamePlayer();
 });
 gamePlayer.addEventListener("close", () => {
@@ -219,7 +228,7 @@ gamePlayer.addEventListener("close", () => {
   syncFullscreenButton();
 });
 gameFullscreen.addEventListener("click", async () => {
-  if (document.fullscreenElement === gamePlayer) {
+  if (document.fullscreenElement === gameFrame) {
     try {
       await document.exitFullscreen();
     } catch (error) {
@@ -234,8 +243,8 @@ gameFullscreen.addEventListener("click", async () => {
   }
 
   try {
-    if (typeof gamePlayer.requestFullscreen !== "function") throw new Error("Fullscreen API is unavailable");
-    await gamePlayer.requestFullscreen();
+    if (typeof gameFrame.requestFullscreen !== "function") throw new Error("Fullscreen API is unavailable");
+    await gameFrame.requestFullscreen();
   } catch (error) {
     console.warn("Native fullscreen is unavailable; using in-page fullscreen.", error);
     gamePlayer.classList.add("is-fullscreen");

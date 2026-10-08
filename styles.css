@@ -304,7 +304,6 @@ body {
   background: #000;
 }
 
-.game-player-dialog:fullscreen,
 .game-player-dialog.is-fullscreen {
   position: fixed;
   inset: 0;
@@ -316,10 +315,22 @@ body {
   border-radius: 0;
 }
 
-.game-player-dialog:fullscreen .game-player-frame,
 .game-player-dialog.is-fullscreen .game-player-frame {
   flex: 1;
   aspect-ratio: auto;
+}
+
+.game-player-dialog.is-fullscreen .game-player-header { display: none; }
+
+.game-player-dialog.is-fullscreen .game-player-frame iframe,
+.game-player-frame iframe:fullscreen {
+  width: 100vw;
+  height: 100dvh;
+}
+
+.game-player-frame iframe:fullscreen {
+  position: fixed;
+  inset: 0;
 }
 
 .search-wrap {
