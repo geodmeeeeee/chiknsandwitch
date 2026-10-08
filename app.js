@@ -11,6 +11,11 @@ const changelogOpen = document.getElementById("changelogOpen");
 const changelogDialog = document.getElementById("changelogDialog");
 const changelogClose = document.getElementById("changelogClose");
 const changelogText = document.getElementById("changelogText");
+const gamePlayer = document.getElementById("gamePlayer");
+const gamePlayerTitle = document.getElementById("gamePlayerTitle");
+const gamePlayerClose = document.getElementById("gamePlayerClose");
+const gameFullscreen = document.getElementById("gameFullscreen");
+const gameFrame = document.getElementById("gameFrame");
 const pagination = document.getElementById("pagination");
 const previousPage = document.getElementById("previousPage");
 const nextPage = document.getElementById("nextPage");
@@ -47,7 +52,7 @@ function card(game, index, animationType = "") {
     : `<div class="placeholder-art" aria-hidden="true">${["🎮", "🕹️", "👾", "🚀"][index % 4]}</div>`;
 
   return `
-    <a class="game-card" href="${url}" aria-label="Play ${title}">
+    <a class="game-card" href="${url}" data-game-url="${url}" data-game-title="${title}" aria-label="Play ${title}">
       <div${animation}>${image}</div>
       <h2 class="game-title">${title}</h2>
       ${tags.length ? `<div class="game-tags">${tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
@@ -129,6 +134,27 @@ function closeDialog(dialog) {
   dialog.addEventListener("animationend", finishClosing);
 }
 
+function openGamePlayer(title, url) {
+  gamePlayerTitle.textContent = title;
+  gameFrame.title = `${title} game`;
+  gameFrame.src = url;
+  gamePlayer.showModal();
+  syncFullscreenButton();
+}
+
+function closeGamePlayer() {
+  if (!gamePlayer.open || gamePlayer.dataset.closing === "true") return;
+  gamePlayer.classList.remove("is-fullscreen");
+  syncFullscreenButton();
+  closeDialog(gamePlayer);
+}
+
+function syncFullscreenButton() {
+  const isFullscreen = document.fullscreenElement === gamePlayer || gamePlayer.classList.contains("is-fullscreen");
+  gameFullscreen.textContent = isFullscreen ? "Exit fullscreen" : "Fullscreen";
+  gameFullscreen.setAttribute("aria-label", isFullscreen ? "Exit fullscreen" : "Enter fullscreen");
+}
+
 function buildFilterOptions() {
   const tags = [...new Set(games.flatMap(game => Array.isArray(game.tags) ? game.tags : []))]
     .sort((first, second) => first.localeCompare(second));
@@ -169,6 +195,54 @@ changelogDialog.addEventListener("cancel", event => {
   event.preventDefault();
   closeDialog(changelogDialog);
 });
+
+grid.addEventListener("click", event => {
+  const card = event.target.closest(".game-card");
+  if (!card || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+  const url = card.dataset.gameUrl;
+  if (!url || url === "#") return;
+
+  event.preventDefault();
+  openGamePlayer(card.dataset.gameTitle, url);
+});
+gamePlayerClose.addEventListener("click", () => closeGamePlayer());
+gamePlayer.addEventListener("click", event => {
+  if (event.target === gamePlayer) closeGamePlayer();
+});
+gamePlayer.addEventListener("cancel", event => {
+  event.preventDefault();
+  closeGamePlayer();
+});
+gamePlayer.addEventListener("close", () => {
+  gameFrame.src = "about:blank";
+  syncFullscreenButton();
+});
+gameFullscreen.addEventListener("click", async () => {
+  if (document.fullscreenElement === gamePlayer) {
+    try {
+      await document.exitFullscreen();
+    } catch (error) {
+      console.error("Unable to exit fullscreen.", error);
+    }
+    return;
+  }
+  if (gamePlayer.classList.contains("is-fullscreen")) {
+    gamePlayer.classList.remove("is-fullscreen");
+    syncFullscreenButton();
+    return;
+  }
+
+  try {
+    if (typeof gamePlayer.requestFullscreen !== "function") throw new Error("Fullscreen API is unavailable");
+    await gamePlayer.requestFullscreen();
+  } catch (error) {
+    console.warn("Native fullscreen is unavailable; using in-page fullscreen.", error);
+    gamePlayer.classList.add("is-fullscreen");
+    syncFullscreenButton();
+  }
+});
+document.addEventListener("fullscreenchange", syncFullscreenButton);
 
 search.addEventListener("input", filterGames);
 previousPage.addEventListener("click", () => goToPage(currentPage - 1));

@@ -41,6 +41,19 @@
       <pre id="changelogText" class="changelog-document">Loading changelog...</pre>
     </dialog>
 
+    <dialog id="gamePlayer" class="game-player-dialog" aria-labelledby="gamePlayerTitle">
+      <div class="game-player-header">
+        <h2 id="gamePlayerTitle"></h2>
+        <div class="game-player-actions">
+          <button id="gameFullscreen" class="game-player-button" type="button">Fullscreen</button>
+          <button id="gamePlayerClose" class="game-player-button" type="button">Close</button>
+        </div>
+      </div>
+      <div class="game-player-frame">
+        <iframe id="gameFrame" title="Game" allow="autoplay; fullscreen; gamepad" allowfullscreen></iframe>
+      </div>
+    </dialog>
+
     <div id="gameGrid" class="game-grid" aria-live="polite"></div>
 
     <nav id="pagination" class="pagination" aria-label="Game pages" hidden>
