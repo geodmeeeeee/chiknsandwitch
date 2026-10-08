@@ -256,6 +256,12 @@ const games = [
     tags: ["platformer", "puzzle"]
   },
   {
+    title: "Dreadhead Parkour",
+    image: "images/Dreadhead Parkour.jpg",
+    url: "games/Dreadhead Parkour/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Drift Boss",
     image: "images/Drift Boss.jpg",
     url: "games/Drift Boss/index.html",
