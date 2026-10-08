@@ -564,7 +564,7 @@ const games = [
   {
     title: "Super Mario 64",
     image: "images/Super Mario 64.jpg",
-    url: "games/Super Mario 64/index.html",
+    url: "games/Super Mario 64/index.html",awda
     tags: ["platformer"]
   },
   {
@@ -572,6 +572,12 @@ const games = [
     image: "images/Table Tennis World Tour.jpg",
     url: "games/Table Tennis World Tour/index.html",
     tags: ["sports"]
+  },
+  {
+    title: "The Impossible Quiz",
+    image: "images/The Impossible Quiz.jpg",
+    url: "games/The Impossible Quiz/index.html",
+    tags: ["puzzle"]
   },
   {
     title: "This Is The Only Level",
