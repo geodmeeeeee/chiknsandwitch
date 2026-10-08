@@ -346,6 +346,12 @@ const games = [
     tags: ["platformer", "shooter", "multiplayer"]
   },
   {
+    title: "Gunspin",
+    image: "images/Gunspin.jpg",
+    url: "games/Gunspin/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Idle Breakout",
     image: "images/Idle Breakout.jpg",
     url: "games/Idle Breakout/index.html",
@@ -564,7 +570,7 @@ const games = [
   {
     title: "Super Mario 64",
     image: "images/Super Mario 64.jpg",
-    url: "games/Super Mario 64/index.html",awda
+    url: "games/Super Mario 64/index.html",
     tags: ["platformer"]
   },
   {
