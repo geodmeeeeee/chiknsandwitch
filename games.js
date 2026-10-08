@@ -388,6 +388,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Henry Stickman Breaking The Bank",
+    image: "images/Henry Stickman Breaking The Bank.jpg",
+    url: "games/Henry Stickman Breaking The Bank/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Hobo",
     image: "images/Hobo.jpg",
     url: "games/Hobo/index.html",
