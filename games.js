@@ -352,6 +352,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Funny Shooter",
+    image: "images/Funny Shooter.jpg",
+    url: "games/Funny Shooter/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Geometry Dash",
     image: "images/Geometry Dash.jpg",
     url: "games/Geometry Dash/index.html",
