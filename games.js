@@ -82,6 +82,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Age Of War",
+    image: "images/Age Of War.jpg",
+    url: "games/Age Of War/index.html",
+    tags: ["strategy"]
+  },
+  {
     title: "Bacon May Die",
     image: "images/Bacon May Die.jpg",
     url: "games/Bacon May Die/index.html",
