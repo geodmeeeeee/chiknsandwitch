@@ -138,6 +138,7 @@ function openGamePlayer(title, url) {
   gamePlayerTitle.textContent = title;
   gameFrame.title = `${title} game`;
   gameFrame.src = url;
+  gamePlayer.classList.add("is-fullscreen");
   gamePlayer.showModal();
   syncFullscreenButton();
 }
@@ -145,12 +146,11 @@ function openGamePlayer(title, url) {
 function closeGamePlayer() {
   if (!gamePlayer.open || gamePlayer.dataset.closing === "true") return;
   gamePlayer.classList.remove("is-fullscreen");
-  syncFullscreenButton();
   closeDialog(gamePlayer);
 }
 
 function syncFullscreenButton() {
-  const isFullscreen = document.fullscreenElement === gameFrame || gamePlayer.classList.contains("is-fullscreen");
+  const isFullscreen = document.fullscreenElement === gameFrame;
   gameFullscreen.textContent = isFullscreen ? "Exit fullscreen" : "Fullscreen";
   gameFullscreen.setAttribute("aria-label", isFullscreen ? "Exit fullscreen" : "Enter fullscreen");
 }
@@ -198,27 +198,24 @@ changelogDialog.addEventListener("cancel", event => {
 
 grid.addEventListener("click", event => {
   const card = event.target.closest(".game-card");
-  if (!card || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (!card || event.button !== 0) return;
 
   const url = card.dataset.gameUrl;
   if (!url || url === "#") return;
 
   event.preventDefault();
   openGamePlayer(card.dataset.gameTitle, url);
-});
+}, true);
 gamePlayerClose.addEventListener("click", () => closeGamePlayer());
 gamePlayer.addEventListener("click", event => {
   if (event.target === gamePlayer) closeGamePlayer();
 });
 gamePlayer.addEventListener("cancel", event => {
   event.preventDefault();
-  if (gamePlayer.classList.contains("is-fullscreen")) {
-    gamePlayer.classList.remove("is-fullscreen");
-    syncFullscreenButton();
-    return;
-  }
   if (document.fullscreenElement === gameFrame) {
-    document.exitFullscreen();
+    document.exitFullscreen().catch(error => {
+      console.error("Unable to exit fullscreen.", error);
+    });
     return;
   }
   closeGamePlayer();
@@ -236,19 +233,12 @@ gameFullscreen.addEventListener("click", async () => {
     }
     return;
   }
-  if (gamePlayer.classList.contains("is-fullscreen")) {
-    gamePlayer.classList.remove("is-fullscreen");
-    syncFullscreenButton();
-    return;
-  }
 
   try {
     if (typeof gameFrame.requestFullscreen !== "function") throw new Error("Fullscreen API is unavailable");
     await gameFrame.requestFullscreen();
   } catch (error) {
-    console.warn("Native fullscreen is unavailable; using in-page fullscreen.", error);
-    gamePlayer.classList.add("is-fullscreen");
-    syncFullscreenButton();
+    console.error("Unable to enter fullscreen.", error);
   }
 });
 document.addEventListener("fullscreenchange", syncFullscreenButton);
