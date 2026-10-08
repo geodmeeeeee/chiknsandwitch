@@ -352,6 +352,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Hobo",
+    image: "images/Hobo.jpg",
+    url: "games/Hobo/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "Idle Breakout",
     image: "images/Idle Breakout.jpg",
     url: "games/Idle Breakout/index.html",
