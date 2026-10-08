@@ -7,10 +7,6 @@ const filterOptions = document.getElementById("filterOptions");
 const clearFilters = document.getElementById("clearFilters");
 const filterClose = document.getElementById("filterClose");
 const filterDone = document.getElementById("filterDone");
-const changelogOpen = document.getElementById("changelogOpen");
-const changelogDialog = document.getElementById("changelogDialog");
-const changelogClose = document.getElementById("changelogClose");
-const changelogText = document.getElementById("changelogText");
 const gamePlayer = document.getElementById("gamePlayer");
 const gamePlayerTitle = document.getElementById("gamePlayerTitle");
 const gamePlayerClose = document.getElementById("gamePlayerClose");
@@ -151,8 +147,9 @@ function closeGamePlayer() {
 
 function syncFullscreenButton() {
   const isFullscreen = document.fullscreenElement === gameFrame;
-  gameFullscreen.textContent = isFullscreen ? "Exit fullscreen" : "Fullscreen";
-  gameFullscreen.setAttribute("aria-label", isFullscreen ? "Exit fullscreen" : "Enter fullscreen");
+  const label = isFullscreen ? "Exit fullscreen" : "Enter fullscreen";
+  gameFullscreen.setAttribute("aria-label", label);
+  gameFullscreen.title = label;
 }
 
 function buildFilterOptions() {
@@ -172,29 +169,6 @@ function setFilterPanelOpen(isOpen) {
   if (!isOpen) closeDialog(filterPanel);
   filterToggle.setAttribute("aria-expanded", String(isOpen));
 }
-
-changelogOpen.addEventListener("click", async () => {
-  changelogDialog.showModal();
-  if (changelogText.dataset.loaded === "true") return;
-
-  try {
-    const response = await fetch("changelog.txt");
-    if (!response.ok) throw new Error("Changelog could not be loaded");
-    changelogText.textContent = await response.text();
-    changelogText.dataset.loaded = "true";
-  } catch {
-    changelogText.textContent = "Unable to load changelog.txt.";
-  }
-});
-
-changelogClose.addEventListener("click", () => closeDialog(changelogDialog));
-changelogDialog.addEventListener("click", event => {
-  if (event.target === changelogDialog) closeDialog(changelogDialog);
-});
-changelogDialog.addEventListener("cancel", event => {
-  event.preventDefault();
-  closeDialog(changelogDialog);
-});
 
 grid.addEventListener("click", event => {
   const card = event.target.closest(".game-card");

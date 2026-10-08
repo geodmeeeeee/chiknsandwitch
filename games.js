@@ -316,6 +316,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Five Nights At Epsteins",
+    image: "images/Five Nights At Epsteins.jpg",
+    url: "games/Five Nights At Epsteins/index.html",
+    tags: ["horror"]
+  },
+  {
     title: "Football Legends",
     image: "images/Football Legends.jpg",
     url: "games/Football Legends/index.html",

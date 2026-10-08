@@ -33,8 +33,10 @@ body {
   margin: 0 auto 30px;
 }
 
-.changelog-open,
+.suggestions-link,
 .filter-toggle {
+  display: inline-flex;
+  align-items: center;
   flex: none;
   height: 44px;
   padding: 0 12px;
@@ -43,10 +45,11 @@ body {
   background: var(--surface);
   color: var(--text);
   font: inherit;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.changelog-open:hover,
+.suggestions-link:hover,
 .filter-toggle:hover { background: var(--surface-hover); }
 
 .filter-control { flex: none; }
@@ -66,21 +69,17 @@ body {
 }
 
 .filter-dialog[open],
-.changelog-dialog[open],
 .game-player-dialog[open] { animation: dialog-open 220ms ease-out both; }
 
 .filter-dialog.is-closing,
-.changelog-dialog.is-closing,
 .game-player-dialog.is-closing { animation: dialog-close 220ms ease-in both; }
 
 .filter-dialog::backdrop,
-.changelog-dialog::backdrop,
 .game-player-dialog::backdrop {
   animation: backdrop-open 220ms ease-out both;
 }
 
 .filter-dialog.is-closing::backdrop,
-.changelog-dialog.is-closing::backdrop,
 .game-player-dialog.is-closing::backdrop { animation: backdrop-close 220ms ease-in both; }
 
 .filter-dialog::backdrop {
@@ -112,14 +111,10 @@ body {
   .filter-dialog[open],
   .filter-dialog.is-closing,
   .filter-dialog::backdrop,
-  .changelog-dialog[open],
-  .changelog-dialog.is-closing,
-  .changelog-dialog::backdrop,
   .game-player-dialog[open],
   .game-player-dialog.is-closing,
   .game-player-dialog::backdrop,
   .filter-dialog.is-closing::backdrop,
-  .changelog-dialog.is-closing::backdrop,
   .game-player-dialog.is-closing::backdrop { animation-duration: .01ms; }
 
   .game-image--pop,
@@ -182,48 +177,6 @@ body {
 
 .filter-done { border-color: var(--accent); background: var(--accent); }
 
-.changelog-dialog {
-  width: min(620px, calc(100% - 32px));
-  max-height: min(75vh, 700px);
-  padding: 22px;
-  border: 1px solid rgba(255, 255, 255, .14);
-  border-radius: 12px;
-  background: rgba(20, 24, 32, .92);
-  color: var(--text);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, .4);
-  backdrop-filter: blur(12px);
-}
-
-.changelog-dialog::backdrop {
-  background: rgba(0, 0, 0, .66);
-  backdrop-filter: blur(2px);
-}
-
-.changelog-close {
-  margin: 0 0 18px;
-  padding: 7px 11px;
-  border: 1px solid var(--border);
-  border-radius: 7px;
-  background: rgba(255, 255, 255, .04);
-  color: var(--text);
-  font: inherit;
-  cursor: pointer;
-}
-
-.changelog-dialog h2 {
-  margin: 0 0 14px;
-  font-size: 1.1rem;
-}
-
-.changelog-document {
-  margin: 0;
-  overflow-wrap: anywhere;
-  color: var(--text);
-  font: inherit;
-  line-height: 1.55;
-  white-space: pre-wrap;
-}
-
 .game-player-dialog[open] {
   display: flex;
   flex-direction: column;
@@ -269,8 +222,11 @@ body {
 .game-player-actions { display: flex; flex: none; gap: 8px; }
 
 .game-player-button {
+  display: grid;
+  width: 36px;
   min-height: 36px;
-  padding: 0 12px;
+  padding: 0;
+  place-items: center;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface-hover);
@@ -279,13 +235,23 @@ body {
   cursor: pointer;
 }
 
+.game-player-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .game-player-button:hover {
-  border-color: var(--accent);
-  background: rgba(124, 92, 255, .16);
+  border-color: var(--muted);
+  background: rgba(255, 255, 255, .08);
 }
 
 .game-player-button:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--muted);
   outline-offset: 2px;
 }
 

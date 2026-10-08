@@ -32,21 +32,23 @@
           </div>
         </dialog>
       </div>
-      <button id="changelogOpen" class="changelog-open" type="button" aria-haspopup="dialog" aria-controls="changelogDialog">Changelog</button>
+      <a class="suggestions-link" href="https://forms.gle/e8qHD2dKxWxFEm2m7" target="_blank" rel="noopener noreferrer">Bugs / Suggestions</a>
     </div>
-
-    <dialog id="changelogDialog" class="changelog-dialog" aria-labelledby="changelogHeading">
-      <button id="changelogClose" class="changelog-close" type="button">Close</button>
-      <h2 id="changelogHeading">Changelog</h2>
-      <pre id="changelogText" class="changelog-document">Loading changelog...</pre>
-    </dialog>
 
     <dialog id="gamePlayer" class="game-player-dialog" aria-labelledby="gamePlayerTitle">
       <div class="game-player-header">
         <h2 id="gamePlayerTitle"></h2>
         <div class="game-player-actions">
-          <button id="gameFullscreen" class="game-player-button" type="button">Fullscreen</button>
-          <button id="gamePlayerClose" class="game-player-button" type="button">Close</button>
+          <button id="gameFullscreen" class="game-player-button" type="button" aria-label="Enter fullscreen" title="Enter fullscreen">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m13-5v3a2 2 0 0 1-2 2h-3" />
+            </svg>
+          </button>
+          <button id="gamePlayerClose" class="game-player-button" type="button" aria-label="Close game" title="Close game">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          </button>
         </div>
       </div>
       <div class="game-player-frame">
