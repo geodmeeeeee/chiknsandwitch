@@ -394,6 +394,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Henry Stickman Escaping The Prison",
+    image: "images/Henry Stickman Escaping The Prison.jpg",
+    url: "games/Henry Stickman Escaping The Prison/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Hobo",
     image: "images/Hobo.jpg",
     url: "games/Hobo/index.html",
