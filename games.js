@@ -334,6 +334,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Kour.io",
+    image: "images/Kour.io.jpg",
+    url: "games/Kour.io/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Learn To Fly 3",
     image: "images/Learn To Fly 3.jpg",
     url: "games/Learn To Fly 3/index.html",
