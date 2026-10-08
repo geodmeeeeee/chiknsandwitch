@@ -412,6 +412,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "Hobo 2",
+    image: "images/Hobo 2 Prison Brawl.jpg",
+    url: "games/Hobo 2 Prison Brawl/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "Idle Breakout",
     image: "images/Idle Breakout.jpg",
     url: "games/Idle Breakout/index.html",
