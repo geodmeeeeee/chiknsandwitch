@@ -777,6 +777,12 @@ const games = [
     url: "games/The Binding Of Issac Wrath Of The Lamb/index.html",
     tags: ["adventure"]
   },
+    {
+    title: "The Final Earth 2",
+    image: "images/The Final Earth 2.jpg",
+    url: "games/The Final Earth 2/index.html",
+    tags: ["adventure"]
+  },
   {
     title: "The Impossible Quiz",
     image: "images/The Impossible Quiz.jpg",
