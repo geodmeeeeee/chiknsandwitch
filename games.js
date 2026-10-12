@@ -860,5 +860,11 @@ const games = [
     image: "images/We Become What We Behold.jpg",
     url: "games/We Become What We Behold/index.html",
     tags: ["simulation"]
+  },
+  {
+    title: "Worlds Hardest Game",
+    image: "images/Worlds Hardest Game.jpg",
+    url: "games/Worlds Hardest Game/index.html",
+    tags: ["puzzle"]
   }
 ];
