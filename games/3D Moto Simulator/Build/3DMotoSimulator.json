@@ -1,0 +1,12 @@
+{
+"companyName": "mhdhammod",
+"productName": "3D Moto Simulator",
+"dataUrl": "3DMotoSimulator.data.unityweb",
+"wasmCodeUrl": "3DMotoSimulator.wasm.code.unityweb",
+"wasmFrameworkUrl": "3DMotoSimulator.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

@@ -22,6 +22,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "3D Moto Simulator",
+    image: "images/3D Moto Simulator.jpg",
+    url: "games/3D Moto Simulator/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "4th And Goal",
     image: "images/4th And Goal.jpg",
     url: "games/4th And Goal/index.html",
@@ -362,6 +368,12 @@ const games = [
     image: "images/Five Nights At Epsteins.jpg",
     url: "games/Five Nights At Epsteins/index.html",
     tags: ["horror"]
+  },
+  {
+    title: "Flick Goal",
+    image: "images/Flick Goal.jpg",
+    url: "games/Flick Goal/index.html",
+    tags: ["sports"]
   },
   {
     title: "Football Legends",
