@@ -568,6 +568,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Moving Truck Bounty",
+    image: "images/Moving Truck Bounty.jpg",
+    url: "games/Moving Truck Bounty/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Ninja VS Evilcorp",
     image: "images/Ninja VS Evilcorp.jpg",
     url: "games/Ninja VS Evilcorp/index.html",
