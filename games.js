@@ -376,6 +376,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "Google Dino",
+    image: "images/Google Dino.jpg",
+    url: "games/Google Dino/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Granny",
     image: "images/Granny.jpg",
     url: "games/Granny/index.html",
