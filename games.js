@@ -334,6 +334,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Fancy Pants Adventure",
+    image: "images/Fancy Pants Adventure.jpg",
+    url: "games/Fancy Pants Adventure/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Five Nights At Epsteins",
     image: "images/Five Nights At Epsteins.jpg",
     url: "games/Five Nights At Epsteins/index.html",
