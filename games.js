@@ -766,6 +766,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Ultrakill",
+    image: "images/Ultrakill.jpg",
+    url: "games/Ultrakill/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Vex 4",
     image: "images/Vex 4.jpg",
     url: "games/Vex 4/index.html",
