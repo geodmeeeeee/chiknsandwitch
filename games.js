@@ -694,6 +694,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Riddle School 4",
+    image: "images/Riddle School 4.jpg",
+    url: "games/Riddle School 4/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Rooftop Snipers",
     image: "images/Rooftop Snipers.jpg",
     url: "games/Rooftop Snipers/index.html",
