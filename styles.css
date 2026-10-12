@@ -366,8 +366,8 @@ body {
 .page-number { min-width: 38px; padding-inline: 8px; }
 
 .page-number.is-current {
-  border-color: var(--accent);
-  background: var(--accent);
+  border-color: #858b95;
+  background: #5b606a;
 }
 
 .page-arrow:disabled {
