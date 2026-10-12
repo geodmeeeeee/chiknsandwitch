@@ -514,6 +514,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Learn To Fly 2 ",
+    image: "images/Learn To Fly 2.jpg",
+    url: "games/Learn To Fly 2/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Learn To Fly 3",
     image: "images/Learn To Fly 3.jpg",
     url: "games/Learn To Fly 3/index.html",
