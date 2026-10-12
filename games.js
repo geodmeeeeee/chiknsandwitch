@@ -418,6 +418,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Henry Stickman Stealing The Diamond ",
+    image: "images/Henry Stickman Stealing The Diamond.jpg",
+    url: "games/Henry Stickman Stealing The Diamond/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Highway Bike Simulator",
     image: "images/Highway Bike Simulator.jpg",
     url: "games/Highway Bike Simulator/index.html",
