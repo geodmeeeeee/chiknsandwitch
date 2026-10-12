@@ -832,6 +832,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Undertale",
+    image: "images/Undertale.jpg",
+    url: "games/Undertale/index.html",
+    tags: ["adventure"]
+  },
+  {
     title: "Vex 4",
     image: "images/Vex 4.jpg",
     url: "games/Vex 4/index.html",
