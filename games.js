@@ -471,6 +471,12 @@ const games = [
     url: "games/Hobo 6 Hell/index.html",
     tags: ["fighting"]
   },
+    {
+    title: "Hobo 7 Heaven",
+    image: "images/Hobo 7 Heaven.jpg",
+    url: "games/Hobo 7 Heaven/index.html",
+    tags: ["fighting"]
+  },
   {
     title: "House Of Hazards",
     image: "images/House Of Hazards.jpg",
