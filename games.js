@@ -118,6 +118,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "Bee Swarm Simulator",
+    image: "images/Bee Swarm Simulator.jpg",
+    url: "games/Bee Swarm Simulator/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Bitplanes",
     image: "images/Bitplanes.jpg",
     url: "games/Bitplanes/index.html",
