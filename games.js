@@ -496,6 +496,12 @@ const games = [
     tags: ["horror"]
   },
   {
+    title: "Jelly Mario",
+    image: "images/Jelly Mario.jpg",
+    url: "games/Jelly Mario/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Kour.io",
     image: "images/Kour.io.jpg",
     url: "games/Kour.io/index.html",
