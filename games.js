@@ -604,6 +604,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Papas Tacomia",
+    image: "images/Papas Tacomia.jpg",
+    url: "games/Papas Tacomia/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Parking Fury",
     image: "images/Parking Fury.jpg",
     url: "games/Parking Fury/index.html",
