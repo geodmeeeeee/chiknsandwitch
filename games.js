@@ -406,6 +406,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Henry Stickman Infiltrating The Airship ",
+    image: "images/Henry Stickman Infiltrating The Airship.jpg",
+    url: "games/Henry Stickman Infiltrating The Airship/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Highway Bike Simulator",
     image: "images/Highway Bike Simulator.jpg",
     url: "games/Highway Bike Simulator/index.html",
