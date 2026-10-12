@@ -448,6 +448,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Iron Lung",
+    image: "images/Iron Lung.jpg",
+    url: "games/Iron Lung/index.html",
+    tags: ["horror"]
+  },
+  {
     title: "Kour.io",
     image: "images/Kour.io.jpg",
     url: "games/Kour.io/index.html",
