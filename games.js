@@ -460,6 +460,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "Hobo 6 Hell",
+    image: "images/Hobo 6 Hell.jpg",
+    url: "games/Hobo 6 Hell/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "House Of Hazards",
     image: "images/House Of Hazards.jpg",
     url: "games/House Of Hazards/index.html",
