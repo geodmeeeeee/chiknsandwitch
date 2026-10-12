@@ -394,6 +394,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Gunfest",
+    image: "images/Gunfest.jpg",
+    url: "games/Gunfest/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Gunspin",
     image: "images/Gunspin.jpg",
     url: "games/Gunspin/index.html",
