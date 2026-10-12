@@ -22,6 +22,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "4th And Goal",
+    image: "images/4th And Goal.jpg",
+    url: "games/4th And Goal/index.html",
+    tags: ["sports"]
+  },
+  {
     title: "10 Minutes Till Dawn",
     image: "images/10 Minutes Till Dawn.jpg",
     url: "games/10 Minutes Till Dawn/index.html",
@@ -128,6 +134,12 @@ const games = [
     image: "images/Bitplanes.jpg",
     url: "games/Bitplanes/index.html",
     tags: ["simulation"]
+  },
+  {
+    title: "Blacktop Police Chase",
+    image: "images/Blacktop Police Chase.jpg",
+    url: "games/Blacktop Police Chase/index.html",
+    tags: ["driving"]
   },
   {
     title: "Block Blast",
