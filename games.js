@@ -730,6 +730,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "The Binding Of Issac Wrath Of The Lamb",
+    image: "images/The Binding Of Issac Wrath Of The Lamb.jpg",
+    url: "games/The Binding Of Issac Wrath Of The Lamb/index.html",
+    tags: ["adventure"]
+  },
+  {
     title: "The Impossible Quiz",
     image: "images/The Impossible Quiz.jpg",
     url: "games/The Impossible Quiz/index.html",
