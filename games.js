@@ -286,6 +286,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Color Tunnel 2",
+    image: "images/Color Tunnel 2.jpg",
+    url: "games/Color Tunnel 2/index.html",
+    tags: ["simulator"]
+  },
+  {
     title: "Cookie Clicker",
     image: "images/Cookie Clicker.jpg",
     url: "games/Cookie Clicker/index.html",
