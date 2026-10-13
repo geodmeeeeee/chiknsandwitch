@@ -352,6 +352,12 @@ const games = [
     tags: ["platformer", "puzzle"]
   },
   {
+    title: "Dont You Lecture Me About Your 30 Dollar Website",
+    image: "images/Dont You Lecture Me About Your 30 Dollar Website.jpg",
+    url: "games/Dont You Lecture Me About Your 30 Dollar Website/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Dreadhead Parkour",
     image: "images/Dreadhead Parkour.jpg",
     url: "games/Dreadhead Parkour/index.html",
