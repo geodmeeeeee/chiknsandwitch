@@ -1,0 +1,13 @@
+{
+"companyName": "BrightestGames",
+"productName": "Car Simulator Arena",
+"dataUrl": "CarSimulatorArena.data.unityweb?v=1",
+"wasmCodeUrl": "CarSimulatorArena.wasm.code.unityweb?v=1",
+"wasmFrameworkUrl": "CarSimulatorArena.wasm.framework.js?v=1",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#141414",
+"cacheControl": {"default": "must-revalidate"}
+}

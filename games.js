@@ -268,6 +268,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Car Simulator Arena",
+    image: "images/Car Simulator Arena.jpg",
+    url: "games/Car Simulator Arena/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Choppy Orc",
     image: "images/Choppy Orc.jpg",
     url: "games/Choppy Orc/index.html",
