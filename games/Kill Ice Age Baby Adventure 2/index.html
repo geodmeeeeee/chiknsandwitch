@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Unity WebGL Player | Ice Age Baby Adventure</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #231f20;
+      }
+      #unityContainer {
+        width: 100vw;
+        height: 100vh;
+      }
+      #loadingStatus {
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        padding-top: 40vh;
+        font-size: 1.2em;
+      }
+    </style>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      async function fetchParts(basePath, numParts) {
+        const parts = [];
+        for (let i = 1; i <= numParts; i++) {
+          const partNum = String(i).padStart(3, "0");
+          const response = await fetch(`${basePath}.part${partNum}`);
+          if (!response.ok)
+            throw new Error(`Failed to fetch part ${i} of ${basePath}`);
+          parts.push(await response.arrayBuffer());
+        }
+        const totalLength = parts.reduce((sum, buf) => sum + buf.byteLength, 0);
+        const combined = new Uint8Array(totalLength);
+        let offset = 0;
+        for (const buf of parts) {
+          combined.set(new Uint8Array(buf), offset);
+          offset += buf.byteLength;
+        }
+        return combined.buffer;
+      }
+
+      function interceptAssets(dataBuffer, wasmBuffer) {
+        WebAssembly.instantiateStreaming = (source, imports) =>
+          WebAssembly.instantiate(wasmBuffer, imports);
+        WebAssembly.compileStreaming = () => WebAssembly.compile(wasmBuffer);
+
+        const originalFetch = window.fetch;
+        window.fetch = function (input, init) {
+          const url = String(input instanceof Request ? input.url : input);
+          if (url.includes("wasm.code")) {
+            const blob = new Blob([wasmBuffer], { type: "application/wasm" });
+            return Promise.resolve(
+              new Response(blob, {
+                status: 200,
+                headers: { "Content-Type": "application/wasm" },
+              }),
+            );
+          }
+          if (url.includes("Build.data")) {
+            const blob = new Blob([dataBuffer]);
+            return Promise.resolve(new Response(blob, { status: 200 }));
+          }
+          return originalFetch(input, init);
+        };
+
+        const OrigXHR = window.XMLHttpRequest;
+        window.XMLHttpRequest = class extends OrigXHR {
+          open(method, url, ...rest) {
+            this._url = String(url);
+            super.open(method, url, ...rest);
+          }
+          send(...args) {
+            if (this._url && this._url.includes("wasm.code")) {
+              Object.defineProperty(this, "response", {
+                get: () => wasmBuffer,
+              });
+              Object.defineProperty(this, "responseType", {
+                get: () => "arraybuffer",
+              });
+              Object.defineProperty(this, "status", { get: () => 200 });
+              setTimeout(() => {
+                this.dispatchEvent(new ProgressEvent("load"));
+              }, 0);
+              return;
+            }
+            if (this._url && this._url.includes("Build.data")) {
+              Object.defineProperty(this, "response", {
+                get: () => dataBuffer,
+              });
+              Object.defineProperty(this, "responseType", {
+                get: () => "arraybuffer",
+              });
+              Object.defineProperty(this, "status", { get: () => 200 });
+              setTimeout(() => {
+                this.dispatchEvent(new ProgressEvent("load"));
+              }, 0);
+              return;
+            }
+            super.send(...args);
+          }
+        };
+      }
+
+      async function loadUnity() {
+        const status = document.getElementById("loadingStatus");
+        try {
+          status.textContent = "Fetching game files...";
+
+          const [dataBuffer, wasmCodeBuffer] = await Promise.all([
+            fetchParts("Build/Build.data.unityweb", 4),
+            fetchParts("Build/Build.wasm.code.unityweb", 2),
+          ]);
+
+          status.textContent = "Starting...";
+
+          interceptAssets(dataBuffer, wasmCodeBuffer);
+
+          status.remove();
+          UnityLoader.instantiate("unityContainer", "Build/Build.json");
+        } catch (err) {
+          status.textContent = "Error: " + err.message;
+          console.error(err);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", loadUnity);
+    </script>
+  </head>
+  <body>
+    <div id="loadingStatus"></div>
+    <div id="unityContainer"></div>
+  </body>
+</html>

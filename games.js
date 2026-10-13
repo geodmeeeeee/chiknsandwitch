@@ -670,6 +670,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Kill Ice Age Baby Adventure 2",
+    image: "images/Kill Ice Age Baby Adventure 2.jpg",
+    url: "games/Kill Ice Age Baby Adventure 2/index.html",
+    tags: ["simulator"]
+  },
+  {
     title: "Kour.io",
     image: "images/Kour.io.jpg",
     url: "games/Kour.io/index.html",
