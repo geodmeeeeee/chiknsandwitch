@@ -256,6 +256,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Cannon Basketball 4",
+    image: "images/Cannon Basketball 4.jpg",
+    url: "games/Cannon Basketball 4/index.html",
+    tags: ["sports"]
+  },
+  {
     title: "Capybara Clicker",
     image: "images/Capybara Clicker.jpg",
     url: "games/Capybara Clicker/index.html",
