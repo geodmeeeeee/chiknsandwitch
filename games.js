@@ -136,6 +136,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Basket Random",
+    image: "images/Basket Random.jpg",
+    url: "games/Basket Random/index.html",
+    tags: ["sports","multiplayer"]
+  },
+  {
     title: "Basketball Stars",
     image: "images/Basketball Stars.jpg",
     url: "games/Basketball Stars/index.html",
