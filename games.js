@@ -658,6 +658,12 @@ const games = [
     tags: ["horror"]
   },
   {
+    title: "Iron Snout",
+    image: "images/Iron Snout.jpg",
+    url: "games/Iron Snout/index.html",
+    tags: ["fighting"]
+  },
+  {
     title: "Jelly Mario",
     image: "images/Jelly Mario.jpg",
     url: "games/Jelly Mario/index.html",
