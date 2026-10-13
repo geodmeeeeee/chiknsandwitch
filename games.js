@@ -154,6 +154,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Bitlife",
+    image: "images/Bitlife.jpg",
+    url: "games/Bitlife/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Bitplanes",
     image: "images/Bitplanes.jpg",
     url: "games/Bitplanes/index.html",
