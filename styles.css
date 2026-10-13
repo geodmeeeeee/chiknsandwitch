@@ -320,8 +320,8 @@ body {
 .search-wrap input::placeholder { color: #6f7684; }
 
 .search-wrap input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(124, 92, 255, .12);
+  border-color: #7d8390;
+  box-shadow: 0 0 0 3px rgba(125, 131, 144, .16);
 }
 
 .search-icon {
