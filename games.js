@@ -442,6 +442,12 @@ const games = [
     tags: ["platformer","multiplayer"]
   },
   {
+    title: "Fireboy And Watergirl In The Forest Temple",
+    image: "images/Fireboy And Watergirl In The Forest Temple.jpg",
+    url: "games/Fireboy And Watergirl In The Forest Temple/index.html",
+    tags: ["platformer","multiplayer"]
+  },
+  {
     title: "Five Nights At Epsteins",
     image: "images/Five Nights At Epsteins.jpg",
     url: "games/Five Nights At Epsteins/index.html",
