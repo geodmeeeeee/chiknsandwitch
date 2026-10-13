@@ -289,7 +289,7 @@ const games = [
     title: "Color Tunnel 2",
     image: "images/Color Tunnel 2.jpg",
     url: "games/Color Tunnel 2/index.html",
-    tags: ["simulator"]
+    tags: ["simulation"]
   },
   {
     title: "Cookie Clicker",
