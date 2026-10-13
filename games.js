@@ -183,6 +183,12 @@ const games = [
     url: "games/Blocky Snakes/index.html",
     tags: ["multiplayer"]
   },
+    {
+    title: "Blocky Trials",
+    image: "images/Blocky Trials.jpg",
+    url: "games/Blocky Trials/index.html",
+    tags: ["driving"]
+  },
   {
     title: "Bloons Tower Defense",
     image: "images/Bloons Tower Defense.jpg",
