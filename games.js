@@ -670,6 +670,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Jumping Shell",
+    image: "images/Jumping Shell.jpg",
+    url: "games/Jumping Shell/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Kill Ice Age Baby Adventure 2",
     image: "images/Kill Ice Age Baby Adventure 2.jpg",
     url: "games/Kill Ice Age Baby Adventure 2/index.html",
