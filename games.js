@@ -514,6 +514,12 @@ const games = [
     tags: ["horror"]
   },
   {
+    title: "Granny 2",
+    image: "images/Granny 2.jpg",
+    url: "games/Granny 2/index.html",
+    tags: ["horror"]
+  },
+  {
     title: "Gun Mayhem 2",
     image: "images/Gun Mayhem 2.jpg",
     url: "games/Gun Mayhem 2/index.html",
