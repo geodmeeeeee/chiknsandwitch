@@ -646,6 +646,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Into Space 2",
+    image: "images/Into Space 2.jpg",
+    url: "games/Into Space 2/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Iron Lung",
     image: "images/Iron Lung.jpg",
     url: "games/Iron Lung/index.html",
