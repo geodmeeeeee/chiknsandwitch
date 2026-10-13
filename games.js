@@ -433,7 +433,7 @@ const games = [
     title: "Fireboy And Watergirl 2 Light Temple",
     image: "images/Fireboy And Watergirl 2 Light Temple.jpg",
     url: "games/Fireboy And Watergirl 2 Light Temple/index.html",
-    tags: ["platformer"]
+    tags: ["platformer","multiplayer"]
   },
   {
     title: "Five Nights At Epsteins",
