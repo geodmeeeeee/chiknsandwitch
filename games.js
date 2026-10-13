@@ -724,6 +724,12 @@ const games = [
     tags: ["tycoon"]
   },
   {
+    title: "Monster Tracks",
+    image: "images/Monster Tracks.jpg",
+    url: "games/Monster Tracks/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Moto X3M",
     image: "images/Moto X3M.jpg",
     url: "games/Moto X3M/index.html",
