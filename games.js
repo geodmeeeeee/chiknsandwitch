@@ -358,6 +358,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Draw The Hill",
+    image: "images/Draw The Hill.jpg",
+    url: "games/Draw The Hill/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Dreadhead Parkour",
     image: "images/Dreadhead Parkour.jpg",
     url: "games/Dreadhead Parkour/index.html",
@@ -421,6 +427,12 @@ const games = [
     title: "Fancy Pants Adventure",
     image: "images/Fancy Pants Adventure.jpg",
     url: "games/Fancy Pants Adventure/index.html",
+    tags: ["platformer"]
+  },
+  {
+    title: "Fireboy And Watergirl 2 Light Temple",
+    image: "images/Fireboy And Watergirl 2 Light Temple.jpg",
+    url: "games/Fireboy And Watergirl 2 Light Temple/index.html",
     tags: ["platformer"]
   },
   {
