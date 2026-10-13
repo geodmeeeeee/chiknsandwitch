@@ -10,6 +10,12 @@
 
 const games = [
   {
+      title: "Minecraft",
+    image: "images/Minecraft.jpg",
+    url: "games/Minecraft/index.html",
+    tags: ["sandbox", "multiplayer"]
+  },
+  {
     title: "1 on 1 Soccer",
     image: "images/1 on 1 Soccer.jpg",
     url: "games/1 on 1 Soccer/index.html",
@@ -662,12 +668,6 @@ const games = [
     image: "images/Learn To Fly 3.jpg",
     url: "games/Learn To Fly 3/index.html",
     tags: ["platformer"]
-  },
-  {
-    title: "Minecraft",
-    image: "images/Minecraft.jpg",
-    url: "games/Minecraft/index.html",
-    tags: ["sandbox", "multiplayer"]
   },
   {
     title: "Monkey Mart",
