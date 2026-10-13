@@ -688,6 +688,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Leader Strike",
+    image: "images/Leader Strike.jpg",
+    url: "games/Leader Strike/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Learn To Fly",
     image: "images/Learn To Fly.jpg",
     url: "games/Learn To Fly/index.html",
