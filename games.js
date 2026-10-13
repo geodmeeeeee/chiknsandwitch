@@ -640,6 +640,12 @@ const games = [
     tags: ["clicker"]
   },
   {
+    title: "Idle Football Manager",
+    image: "images/Idle Football Manager.jpg",
+    url: "games/Idle Football Manager/index.html",
+    tags: ["clicker"]
+  },
+  {
     title: "Iron Lung",
     image: "images/Iron Lung.jpg",
     url: "games/Iron Lung/index.html",
