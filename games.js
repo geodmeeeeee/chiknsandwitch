@@ -112,6 +112,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Bad Ice Cream",
+    image: "images/Bad Ice Cream.jpg",
+    url: "games/Bad Ice Cream/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Bad Piggies",
     image: "images/Bad Piggies.jpg",
     url: "games/Bad Piggies/index.html",
