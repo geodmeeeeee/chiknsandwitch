@@ -232,6 +232,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Bob The Robber 4",
+    image: "images/Bob The Robber 4.jpg",
+    url: "games/Bob The Robber 4/index.html",
+    tags: ["puzzle"]
+  },
+  {
     title: "Bouncy Motors",
     image: "images/Bouncy Motors.jpg",
     url: "games/Bouncy Motors/index.html",
