@@ -502,6 +502,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Google Doodle Champion Island",
+    image: "images/Google Doodle Champion Island.jpg",
+    url: "games/Google Doodle Champion Island/index.html",
+    tags: ["platformer","rythm"]
+  },
+  {
     title: "Granny",
     image: "images/Granny.jpg",
     url: "games/Granny/index.html",
