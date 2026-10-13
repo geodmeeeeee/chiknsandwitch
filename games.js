@@ -766,6 +766,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "My Dream Hospital",
+    image: "images/My Dream Hospital.jpg",
+    url: "games/My Dream Hospital/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Ninja VS Evilcorp",
     image: "images/Ninja VS Evilcorp.jpg",
     url: "games/Ninja VS Evilcorp/index.html",
