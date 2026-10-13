@@ -712,6 +712,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Mini Paint",
+    image: "images/Mini Paint.jpg",
+    url: "games/Mini Paint/index.html",
+    tags: ["art"]
+  },
+  {
     title: "Monkey Mart",
     image: "images/Monkey Mart.jpg",
     url: "games/Monkey Mart/index.html",
