@@ -550,6 +550,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Half Life",
+    image: "images/Half Life.jpg",
+    url: "games/Half Life/index.html",
+    tags: ["shooter"]
+  },
+  {
     title: "Henry Stickman Breaking The Bank",
     image: "images/Henry Stickman Breaking The Bank.jpg",
     url: "games/Henry Stickman Breaking The Bank/index.html",
