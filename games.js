@@ -904,6 +904,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "The Binding Of Issac Repentance",
+    image: "images/The Binding Of Issac Repentance.jpg",
+    url: "games/The Binding Of Issac Repentance/index.html",
+    tags: ["adventure"]
+  },
+  {
     title: "The Binding Of Issac Wrath Of The Lamb",
     image: "images/The Binding Of Issac Wrath Of The Lamb.jpg",
     url: "games/The Binding Of Issac Wrath Of The Lamb/index.html",
