@@ -291,9 +291,9 @@ function openGamePlayer(title, url) {
   gamePlayerTitle.textContent = title;
   gameFrame.title = `${title} game`;
   if (gameFrameLoader) gameFrameLoader.classList.remove("is-hidden");
-  gameFrame.src = url;
   gamePlayer.classList.add("is-fullscreen");
   gamePlayer.showModal();
+  gameFrame.src = url;
   syncFullscreenButton();
 }
 
