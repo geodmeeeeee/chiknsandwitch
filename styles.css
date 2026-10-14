@@ -90,6 +90,77 @@ body {
   padding: 24px 0 56px;
 }
 
+.status-bar {
+  position: fixed;
+  top: 18px;
+  right: 20px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.local-clock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  color: var(--text);
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.battery-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.battery-icon {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.battery-icon::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -4px;
+  width: 2px;
+  height: 6px;
+  border-radius: 1px;
+  background: currentColor;
+}
+
+.battery-fill {
+  position: absolute;
+  inset: 2px 2px 2px 2px;
+  width: var(--battery-fill, 50%);
+  border-radius: 2px;
+  background: currentColor;
+}
+
+.battery-level {
+  min-width: 2.8em;
+  text-align: left;
+}
+
 .top-navigation {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

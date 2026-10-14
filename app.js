@@ -22,6 +22,13 @@ const nextPage = document.getElementById("nextPage");
 const pageNumbers = document.getElementById("pageNumbers");
 const pageInput = document.getElementById("pageInput");
 const pageCountLabel = document.getElementById("pageCount");
+const statusBar = document.querySelector(".status-bar");
+const localClock = document.getElementById("localClock");
+const batteryIndicator = document.querySelector(".battery-indicator");
+const batteryLevel = document.getElementById("batteryLevel");
+const batteryFill = document.getElementById("batteryFill");
+const clockEnabled = document.getElementById("clockEnabled");
+const batteryEnabled = document.getElementById("batteryEnabled");
 const gamesPerPage = 24;
 const mostPopularGameTitles = [
   "Minecraft",
@@ -51,6 +58,70 @@ function showView(viewName) {
     tab.classList.toggle("is-active", isActive);
     if (isActive) tab.setAttribute("aria-current", "page");
     else tab.removeAttribute("aria-current");
+  });
+}
+
+function updateLocalClock() {
+  if (!localClock) return;
+
+  const formatter = new Intl.DateTimeFormat(undefined, {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: false
+  });
+
+  const formatted = formatter.format(new Date());
+  localClock.textContent = formatted;
+  localClock.setAttribute("datetime", new Date().toISOString());
+  localClock.setAttribute("aria-label", `Current time: ${formatted}`);
+}
+
+function syncStatusToggles() {
+  const clockIsEnabled = localStorage.getItem("clockEnabled") !== "false";
+  const batteryIsEnabled = localStorage.getItem("batteryEnabled") !== "false";
+
+  if (clockEnabled) clockEnabled.checked = clockIsEnabled;
+  if (batteryEnabled) batteryEnabled.checked = batteryIsEnabled;
+
+  if (localClock) localClock.hidden = !clockIsEnabled;
+  if (batteryIndicator) batteryIndicator.hidden = !batteryIsEnabled;
+  if (statusBar) statusBar.hidden = !clockIsEnabled && !batteryIsEnabled;
+}
+
+function setClockPreference(enabled) {
+  localStorage.setItem("clockEnabled", String(enabled));
+  syncStatusToggles();
+}
+
+function setBatteryPreference(enabled) {
+  localStorage.setItem("batteryEnabled", String(enabled));
+  syncStatusToggles();
+}
+
+function updateBatteryStatus() {
+  if (!batteryLevel || !batteryFill) return;
+
+  if (!navigator.getBattery) {
+    batteryLevel.textContent = "--%";
+    batteryFill.style.setProperty("width", "0%");
+    return;
+  }
+
+  navigator.getBattery().then(battery => {
+    const applyStatus = () => {
+      const percent = Math.round(battery.level * 100);
+      batteryLevel.textContent = `${percent}%`;
+      batteryFill.style.setProperty("width", `${percent}%`);
+      batteryFill.style.setProperty("opacity", battery.charging ? "1" : "0.9");
+      batteryFill.setAttribute("aria-label", `Battery ${percent}%`);
+    };
+
+    applyStatus();
+    battery.addEventListener("levelchange", applyStatus);
+    battery.addEventListener("chargingchange", applyStatus);
+  }).catch(() => {
+    batteryLevel.textContent = "--%";
+    batteryFill.style.setProperty("width", "0%");
   });
 }
 
@@ -240,6 +311,11 @@ darkMode.addEventListener("change", () => setTheme(darkMode.checked));
 reduceMotion.checked = localStorage.getItem("reduceMotion") === "true";
 document.documentElement.classList.toggle("reduce-motion", reduceMotion.checked);
 reduceMotion.addEventListener("change", () => setReducedMotion(reduceMotion.checked));
+clockEnabled.checked = localStorage.getItem("clockEnabled") !== "false";
+batteryEnabled.checked = localStorage.getItem("batteryEnabled") !== "false";
+clockEnabled.addEventListener("change", () => setClockPreference(clockEnabled.checked));
+batteryEnabled.addEventListener("change", () => setBatteryPreference(batteryEnabled.checked));
+syncStatusToggles();
 gamePlayerClose.addEventListener("click", () => closeGamePlayer());
 gamePlayer.addEventListener("click", event => {
   if (event.target === gamePlayer) closeGamePlayer();
@@ -311,5 +387,8 @@ filterPanel.addEventListener("close", () => {
   filterToggle.setAttribute("aria-expanded", "false");
 });
 buildFilterOptions();
+updateLocalClock();
+updateBatteryStatus();
+setInterval(updateLocalClock, 1000);
 render(games, "pop");
 renderHome();
