@@ -17,6 +17,7 @@ const gamePlayerClose = document.getElementById("gamePlayerClose");
 const gameMute = document.getElementById("gameMute");
 const gameFullscreen = document.getElementById("gameFullscreen");
 const gameFrame = document.getElementById("gameFrame");
+const gameFrameLoader = document.getElementById("gameFrameLoader");
 const pagination = document.getElementById("pagination");
 const previousPage = document.getElementById("previousPage");
 const nextPage = document.getElementById("nextPage");
@@ -139,11 +140,31 @@ function updateBatteryStatus() {
   });
 }
 
+function attachImageLoadingState(container) {
+  const image = container.querySelector("img");
+  if (!image) return;
+
+  const startLoading = () => {
+    container.classList.add("is-loading");
+    container.setAttribute("data-loading", "true");
+  };
+
+  const stopLoading = () => {
+    container.classList.remove("is-loading");
+    container.removeAttribute("data-loading");
+  };
+
+  startLoading();
+  image.addEventListener("load", stopLoading, { once: true });
+  image.addEventListener("error", stopLoading, { once: true });
+}
+
 function renderHome() {
   const popularGames = mostPopularGameTitles
     .map(title => games.find(game => game.title.toLowerCase() === title.toLowerCase()))
     .filter(Boolean);
   homeGames.innerHTML = popularGames.map((game, index) => card(game, index)).join("");
+  homeGames.querySelectorAll(".game-image").forEach(container => attachImageLoadingState(container));
 }
 
 function setReducedMotion(enabled) {
@@ -179,7 +200,7 @@ function card(game, index, animationType = "", includeTags = true) {
     : ` class="game-image"`;
 
   const image = game.image
-    ? `<img src="${escapeHtml(game.image)}" alt="" loading="lazy">`
+    ? `<img src="${escapeHtml(game.image)}" alt="" loading="lazy"><span class="loading-spinner" aria-hidden="true"></span>`
     : `<div class="placeholder-art" aria-hidden="true">${["🎮", "🕹️", "👾", "🚀"][index % 4]}</div>`;
 
   return `
@@ -221,6 +242,7 @@ function render(list, animationType = "") {
   const start = (currentPage - 1) * gamesPerPage;
   grid.innerHTML = list.slice(start, start + gamesPerPage)
     .map((game, index) => card(game, start + index, animationType)).join("");
+  grid.querySelectorAll(".game-image").forEach(container => attachImageLoadingState(container));
   emptyState.hidden = list.length !== 0;
   updatePagination(pageCount);
 }
@@ -268,6 +290,7 @@ function closeDialog(dialog) {
 function openGamePlayer(title, url) {
   gamePlayerTitle.textContent = title;
   gameFrame.title = `${title} game`;
+  if (gameFrameLoader) gameFrameLoader.classList.remove("is-hidden");
   gameFrame.src = url;
   gamePlayer.classList.add("is-fullscreen");
   gamePlayer.showModal();
@@ -360,8 +383,15 @@ gamePlayer.addEventListener("cancel", event => {
 });
 gamePlayer.addEventListener("close", () => {
   gameFrame.src = "about:blank";
+  if (gameFrameLoader) gameFrameLoader.classList.add("is-hidden");
   syncFullscreenButton();
   syncMuteButton();
+});
+gameFrame.addEventListener("load", () => {
+  if (gameFrameLoader) gameFrameLoader.classList.add("is-hidden");
+});
+gameFrame.addEventListener("error", () => {
+  if (gameFrameLoader) gameFrameLoader.classList.add("is-hidden");
 });
 gameFullscreen.addEventListener("click", async () => {
   if (document.fullscreenElement === gameFrame) {
