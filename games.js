@@ -508,12 +508,6 @@ const games = [
     tags: ["platformer"]
   },
   {
-    title: "Google Doodle Champion Island",
-    image: "images/Google Doodle Champion Island.jpg",
-    url: "games/Google Doodle Champion Island/index.html",
-    tags: ["platformer","rythm"]
-  },
-  {
     title: "Granny",
     image: "images/Granny.jpg",
     url: "games/Granny/index.html",
@@ -932,12 +926,6 @@ const games = [
     image: "images/Speed Stars.jpg",
     url: "games/Speed Stars/index.html",
     tags: ["sports"]
-  },
-    {
-    title: "Station 141",
-    image: "images/Station 141.jpg",
-    url: "games/Station 141/index.html",
-    tags: ["shooter"]
   },
   {
     title: "Stickman Hook",
