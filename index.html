@@ -113,6 +113,18 @@
       <div class="game-player-header">
         <h2 id="gamePlayerTitle"></h2>
         <div class="game-player-actions">
+          <button id="gameMute" class="game-player-button" type="button" aria-label="Mute game" title="Mute game">
+            <svg id="gameMuteIcon" class="game-mute-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <g class="speaker-unmuted">
+                <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+                <path d="M15.5 9.5a4 4 0 0 1 0 5M18 7a7 7 0 0 1 0 10" />
+              </g>
+              <g class="speaker-muted">
+                <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+                <path d="M16 9l4 6M20 9l-4 6" />
+              </g>
+            </svg>
+          </button>
           <button id="gameFullscreen" class="game-player-button" type="button" aria-label="Enter fullscreen" title="Enter fullscreen">
             <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
               <path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m13-5v3a2 2 0 0 1-2 2h-3" />

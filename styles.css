@@ -623,6 +623,27 @@ body {
   stroke-width: 2;
 }
 
+.game-mute-icon {
+  display: block;
+}
+
+.game-mute-icon .speaker-unmuted,
+.game-mute-icon .speaker-muted {
+  transition: opacity .15s ease;
+}
+
+.game-mute-icon .speaker-muted {
+  opacity: 0;
+}
+
+.game-player-button[data-muted="true"] .speaker-unmuted {
+  opacity: 0;
+}
+
+.game-player-button[data-muted="true"] .speaker-muted {
+  opacity: 1;
+}
+
 .game-player-button:hover {
   border-color: var(--muted);
   background: var(--control-hover);

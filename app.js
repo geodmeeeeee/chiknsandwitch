@@ -14,6 +14,7 @@ const filterDone = document.getElementById("filterDone");
 const gamePlayer = document.getElementById("gamePlayer");
 const gamePlayerTitle = document.getElementById("gamePlayerTitle");
 const gamePlayerClose = document.getElementById("gamePlayerClose");
+const gameMute = document.getElementById("gameMute");
 const gameFullscreen = document.getElementById("gameFullscreen");
 const gameFrame = document.getElementById("gameFrame");
 const pagination = document.getElementById("pagination");
@@ -83,9 +84,22 @@ function syncStatusToggles() {
   if (clockEnabled) clockEnabled.checked = clockIsEnabled;
   if (batteryEnabled) batteryEnabled.checked = batteryIsEnabled;
 
-  if (localClock) localClock.hidden = !clockIsEnabled;
-  if (batteryIndicator) batteryIndicator.hidden = !batteryIsEnabled;
-  if (statusBar) statusBar.hidden = !clockIsEnabled && !batteryIsEnabled;
+  if (localClock) {
+    localClock.hidden = !clockIsEnabled;
+    localClock.style.display = clockIsEnabled ? "inline-flex" : "none";
+  }
+
+  if (batteryIndicator) {
+    batteryIndicator.hidden = !batteryIsEnabled;
+    batteryIndicator.style.display = batteryIsEnabled ? "inline-flex" : "none";
+    batteryIndicator.setAttribute("aria-hidden", String(!batteryIsEnabled));
+  }
+
+  if (statusBar) {
+    const shouldShowStatusBar = clockIsEnabled || batteryIsEnabled;
+    statusBar.hidden = !shouldShowStatusBar;
+    statusBar.style.display = shouldShowStatusBar ? "inline-flex" : "none";
+  }
 }
 
 function setClockPreference(enabled) {
@@ -273,6 +287,16 @@ function syncFullscreenButton() {
   gameFullscreen.title = label;
 }
 
+function syncMuteButton() {
+  if (!gameMute || !gameFrame) return;
+
+  const isMuted = gameFrame.muted;
+  const label = isMuted ? "Unmute game" : "Mute game";
+  gameMute.setAttribute("aria-label", label);
+  gameMute.title = label;
+  gameMute.dataset.muted = String(isMuted);
+}
+
 function buildFilterOptions() {
   const tags = [...new Set(games.flatMap(game => Array.isArray(game.tags) ? game.tags : []))]
     .sort((first, second) => first.localeCompare(second));
@@ -317,6 +341,10 @@ clockEnabled.addEventListener("change", () => setClockPreference(clockEnabled.ch
 batteryEnabled.addEventListener("change", () => setBatteryPreference(batteryEnabled.checked));
 syncStatusToggles();
 gamePlayerClose.addEventListener("click", () => closeGamePlayer());
+gameMute.addEventListener("click", () => {
+  gameFrame.muted = !gameFrame.muted;
+  syncMuteButton();
+});
 gamePlayer.addEventListener("click", event => {
   if (event.target === gamePlayer) closeGamePlayer();
 });
@@ -333,6 +361,7 @@ gamePlayer.addEventListener("cancel", event => {
 gamePlayer.addEventListener("close", () => {
   gameFrame.src = "about:blank";
   syncFullscreenButton();
+  syncMuteButton();
 });
 gameFullscreen.addEventListener("click", async () => {
   if (document.fullscreenElement === gameFrame) {
