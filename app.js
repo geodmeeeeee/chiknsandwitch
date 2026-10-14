@@ -1,4 +1,8 @@
 const grid = document.getElementById("gameGrid");
+const homeGames = document.getElementById("homeGames");
+const navigationTabs = [...document.querySelectorAll("[data-view]")];
+const darkMode = document.getElementById("darkMode");
+const reduceMotion = document.getElementById("reduceMotion");
 const search = document.getElementById("search");
 const emptyState = document.getElementById("emptyState");
 const filterToggle = document.getElementById("filterToggle");
@@ -19,8 +23,54 @@ const pageNumbers = document.getElementById("pageNumbers");
 const pageInput = document.getElementById("pageInput");
 const pageCountLabel = document.getElementById("pageCount");
 const gamesPerPage = 24;
+const mostPopularGameTitles = [
+  "Minecraft",
+  "The Binding Of Issac Repentance",
+  "Kour.io",
+  "Ultrakill"
+];
 let currentPage = 1;
 let filteredGames = games;
+
+function showView(viewName) {
+  const viewOrder = ["settings", "home", "games"];
+  const currentView = document.querySelector(".page-view:not([hidden])");
+  const currentName = currentView?.id.replace("View", "");
+  const directionClass = viewOrder.indexOf(viewName) > viewOrder.indexOf(currentName)
+    ? "is-entering-from-right"
+    : "is-entering-from-left";
+
+  document.querySelectorAll(".page-view").forEach(view => {
+    const isSelected = view.id === `${viewName}View`;
+    view.hidden = !isSelected;
+    view.classList.remove("is-entering-from-left", "is-entering-from-right");
+    if (isSelected && currentView !== view) view.classList.add(directionClass);
+  });
+  document.querySelectorAll(".navigation-tab").forEach(tab => {
+    const isActive = tab.dataset.view === viewName;
+    tab.classList.toggle("is-active", isActive);
+    if (isActive) tab.setAttribute("aria-current", "page");
+    else tab.removeAttribute("aria-current");
+  });
+}
+
+function renderHome() {
+  const popularGames = mostPopularGameTitles
+    .map(title => games.find(game => game.title.toLowerCase() === title.toLowerCase()))
+    .filter(Boolean);
+  homeGames.innerHTML = popularGames.map((game, index) => card(game, index)).join("");
+}
+
+function setReducedMotion(enabled) {
+  document.documentElement.classList.toggle("reduce-motion", enabled);
+  localStorage.setItem("reduceMotion", String(enabled));
+}
+
+function setTheme(isDark) {
+  const theme = isDark ? "dark" : "light";
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem("theme", theme);
+}
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, char => ({
@@ -32,7 +82,7 @@ function escapeHtml(value) {
   }[char]));
 }
 
-function card(game, index, animationType = "") {
+function card(game, index, animationType = "", includeTags = true) {
   const title = escapeHtml(game.title);
   const url = escapeHtml(game.url || "#");
   const tags = Array.isArray(game.tags) ? game.tags : [];
@@ -51,7 +101,7 @@ function card(game, index, animationType = "") {
     <a class="game-card" href="${url}" data-game-url="${url}" data-game-title="${title}" aria-label="Play ${title}">
       <div${animation}>${image}</div>
       <h2 class="game-title">${title}</h2>
-      ${tags.length ? `<div class="game-tags">${tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      ${includeTags && tags.length ? `<div class="game-tags">${tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
     </a>
   `;
 }
@@ -170,16 +220,26 @@ function setFilterPanelOpen(isOpen) {
   filterToggle.setAttribute("aria-expanded", String(isOpen));
 }
 
-grid.addEventListener("click", event => {
-  const card = event.target.closest(".game-card");
-  if (!card || event.button !== 0) return;
+function handleGameClick(event) {
+  const target = event.target.closest("[data-game-url]");
+  if (!target || event.button !== 0) return;
 
-  const url = card.dataset.gameUrl;
+  const url = target.dataset.gameUrl;
   if (!url || url === "#") return;
 
   event.preventDefault();
-  openGamePlayer(card.dataset.gameTitle, url);
-}, true);
+  openGamePlayer(target.dataset.gameTitle, url);
+}
+
+grid.addEventListener("click", handleGameClick, true);
+homeGames.addEventListener("click", handleGameClick, true);
+navigationTabs.forEach(tab => tab.addEventListener("click", () => showView(tab.dataset.view)));
+darkMode.checked = localStorage.getItem("theme") !== "light";
+document.documentElement.dataset.theme = darkMode.checked ? "dark" : "light";
+darkMode.addEventListener("change", () => setTheme(darkMode.checked));
+reduceMotion.checked = localStorage.getItem("reduceMotion") === "true";
+document.documentElement.classList.toggle("reduce-motion", reduceMotion.checked);
+reduceMotion.addEventListener("change", () => setReducedMotion(reduceMotion.checked));
 gamePlayerClose.addEventListener("click", () => closeGamePlayer());
 gamePlayer.addEventListener("click", event => {
   if (event.target === gamePlayer) closeGamePlayer();
@@ -252,3 +312,4 @@ filterPanel.addEventListener("close", () => {
 });
 buildFilterOptions();
 render(games, "pop");
+renderHome();

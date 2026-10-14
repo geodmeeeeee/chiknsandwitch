@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Simple game grid">
-  <title>Games</title>
+  <meta name="description" content="A collection of games to play.">
+  <title>Game Library</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="container">
+    <nav class="top-navigation" aria-label="Main navigation">
+      <button class="navigation-tab" type="button" data-view="settings" aria-controls="settingsView">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/><path d="m19.4 15 .1.1a1.8 1.8 0 0 1-2.5 2.5l-.1-.1a1.8 1.8 0 0 0-3 .9v.2a1.8 1.8 0 0 1-3.6 0v-.2a1.8 1.8 0 0 0-3-.9l-.1.1a1.8 1.8 0 1 1-2.5-2.5l.1-.1a1.8 1.8 0 0 0-.9-3h-.2a1.8 1.8 0 0 1 0-3.6h.2a1.8 1.8 0 0 0 .9-3l-.1-.1a1.8 1.8 0 1 1 2.5-2.5l.1.1a1.8 1.8 0 0 0 3-.9v-.2a1.8 1.8 0 0 1 3.6 0v.2a1.8 1.8 0 0 0 3 .9l.1-.1a1.8 1.8 0 1 1 2.5 2.5l-.1.1a1.8 1.8 0 0 0 .9 3h.2a1.8 1.8 0 0 1 0 3.6h-.2a1.8 1.8 0 0 0-.9 3Z"/></svg>
+        <span>Settings</span>
+      </button>
+      <button class="navigation-tab is-active" type="button" data-view="home" aria-controls="homeView" aria-current="page">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+        <span>Main Menu</span>
+      </button>
+      <button class="navigation-tab" type="button" data-view="games" aria-controls="gamesView">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="13" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/></svg>
+        <span>All Games</span>
+      </button>
+    </nav>
+
+    <section id="homeView" class="page-view home-view" aria-label="Main menu">
+      <div class="home-heading">
+        <h1>Geo Games</h1>
+        <p class="home-description">The best Game site</p>
+      </div>
+      <div class="home-section-heading">
+        <h2>Most popular</h2>
+      </div>
+      <div id="homeGames" class="home-games" role="region" aria-label="Most popular games" tabindex="0"></div>
+      <nav class="home-links" aria-label="More links">
+        <a class="home-link-button" href="https://docs.google.com/document/" target="_blank" rel="noopener noreferrer">
+          <img class="home-link-icon" src="https://www.gstatic.com/images/branding/product/1x/docs_2020q4_48dp.png" alt="" aria-hidden="true">
+          <span>Show all links</span>
+        </a>
+        <a class="home-link-button" href="https://forms.gle/e8qHD2dKxWxFEm2m7" target="_blank" rel="noopener noreferrer">
+          <img class="home-link-icon" src="https://www.gstatic.com/images/branding/product/1x/forms_2020q4_48dp.png" alt="" aria-hidden="true">
+          <span>Bugs / Suggestions</span>
+        </a>
+        <a class="home-link-button donate-button" href="https://ko-fi.com/" target="_blank" rel="noopener noreferrer">
+          <img class="home-link-icon" src="images/Ko-Fi.webp" alt="" aria-hidden="true">
+          <span>Donate</span>
+        </a>
+      </nav>
+      <p class="donation-note">Your donations make updating the site possible.</p>
+    </section>
+
+    <section id="settingsView" class="page-view settings-view" aria-label="Settings" hidden>
+      <div class="view-heading">
+        <p class="eyebrow">PREFERENCES</p>
+        <h1>Settings</h1>
+      </div>
+      <div class="settings-list">
+        <label class="setting-row" for="darkMode">
+          <span class="setting-copy"><strong>Dark mode</strong><span>Use the blackish grayscale theme.</span></span>
+          <input id="darkMode" class="switch-input" type="checkbox" checked>
+          <span class="switch-track" aria-hidden="true"></span>
+        </label>
+        <label class="setting-row" for="reduceMotion">
+          <span class="setting-copy"><strong>Reduce motion</strong><span>Limit animations throughout the library.</span></span>
+          <input id="reduceMotion" class="switch-input" type="checkbox">
+          <span class="switch-track" aria-hidden="true"></span>
+        </label>
+      </div>
+    </section>
+
+    <section id="gamesView" class="page-view games-view" aria-label="All games" hidden>
     <div class="search-toolbar">
       <div class="search-wrap">
         <label class="sr-only" for="search">Search games</label>
@@ -32,7 +93,6 @@
           </div>
         </dialog>
       </div>
-      <a class="suggestions-link" href="https://forms.gle/e8qHD2dKxWxFEm2m7" target="_blank" rel="noopener noreferrer">Bugs / Suggestions</a>
     </div>
 
     <dialog id="gamePlayer" class="game-player-dialog" aria-labelledby="gamePlayerTitle">
@@ -70,6 +130,7 @@
     </nav>
 
     <div id="emptyState" class="empty-state" hidden>No games found.</div>
+    </section>
   </main>
 
   <script src="games.js"></script>
