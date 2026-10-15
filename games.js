@@ -898,6 +898,12 @@ const games = [
     tags: ["platformer"]
   },  
   {
+    title: "Sensory Overload",
+    image: "images/Sensory Overload.jpg",
+    url: "games/Sensory Overload/index.html",
+    tags: ["simulation"]
+  },  
+  {
     title: "Slope",
     image: "images/Slope.jpg",
     url: "games/Slope/index.html",
