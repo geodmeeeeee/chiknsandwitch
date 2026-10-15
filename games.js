@@ -496,6 +496,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Gamble With Your Friends",
+    image: "images/Gamble With Your Friends.jpg",
+    url: "games/Gamble With Your Friends/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Geometry Dash",
     image: "images/Geometry Dash.jpg",
     url: "games/Geometry Dash/index.html",
