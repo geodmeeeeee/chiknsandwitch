@@ -298,6 +298,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Clustertruck",
+    image: "images/Clustertruck.jpg",
+    url: "games/Clustertruck/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Color Tunnel 2",
     image: "images/Color Tunnel 2.jpg",
     url: "games/Color Tunnel 2/index.html",
