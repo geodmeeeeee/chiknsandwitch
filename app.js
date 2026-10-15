@@ -270,9 +270,9 @@ function goToPage(page) {
 
   currentPage = page;
   render(filteredGames, "page");
-  grid.scrollIntoView({
+  window.scrollTo({
+    top: 0,
     behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-    block: "start"
   });
 }
 
