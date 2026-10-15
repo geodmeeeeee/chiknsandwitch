@@ -256,6 +256,12 @@ const games = [
     tags: ["sports", "multiplayer"]
   },
   {
+    title: "Brotato",
+    image: "images/Brotato.jpg",
+    url: "games/Brotato/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Candy Crush",
     image: "images/Candy Crush.jpg",
     url: "games/Candy Crush/index.html",
