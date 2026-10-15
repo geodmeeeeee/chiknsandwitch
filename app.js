@@ -30,6 +30,7 @@ const batteryIndicator = document.querySelector(".battery-indicator");
 const batteryLevel = document.getElementById("batteryLevel");
 const batteryFill = document.getElementById("batteryFill");
 const clockEnabled = document.getElementById("clockEnabled");
+const militaryTime = document.getElementById("militaryTime");
 const batteryEnabled = document.getElementById("batteryEnabled");
 const gamesPerPage = 24;
 const mostPopularGameTitles = [
@@ -69,7 +70,7 @@ function updateLocalClock() {
   const formatter = new Intl.DateTimeFormat(undefined, {
     hour: "numeric",
     minute: "2-digit",
-    hour12: false
+    hour12: localStorage.getItem("militaryTime") !== "true"
   });
 
   const formatted = formatter.format(new Date());
@@ -108,6 +109,11 @@ function setClockPreference(enabled) {
   syncStatusToggles();
 }
 
+function setMilitaryTimePreference(enabled) {
+  localStorage.setItem("militaryTime", String(enabled));
+  updateLocalClock();
+}
+
 function setBatteryPreference(enabled) {
   localStorage.setItem("batteryEnabled", String(enabled));
   syncStatusToggles();
@@ -118,7 +124,7 @@ function updateBatteryStatus() {
 
   if (!navigator.getBattery) {
     batteryLevel.textContent = "--%";
-    batteryFill.style.setProperty("width", "0%");
+    batteryFill.style.setProperty("--battery-level", "0");
     return;
   }
 
@@ -126,7 +132,7 @@ function updateBatteryStatus() {
     const applyStatus = () => {
       const percent = Math.round(battery.level * 100);
       batteryLevel.textContent = `${percent}%`;
-      batteryFill.style.setProperty("width", `${percent}%`);
+      batteryFill.style.setProperty("--battery-level", String(percent / 100));
       batteryFill.style.setProperty("opacity", battery.charging ? "1" : "0.9");
       batteryFill.setAttribute("aria-label", `Battery ${percent}%`);
     };
@@ -136,7 +142,7 @@ function updateBatteryStatus() {
     battery.addEventListener("chargingchange", applyStatus);
   }).catch(() => {
     batteryLevel.textContent = "--%";
-    batteryFill.style.setProperty("width", "0%");
+    batteryFill.style.setProperty("--battery-level", "0");
   });
 }
 
@@ -359,8 +365,10 @@ reduceMotion.checked = localStorage.getItem("reduceMotion") === "true";
 document.documentElement.classList.toggle("reduce-motion", reduceMotion.checked);
 reduceMotion.addEventListener("change", () => setReducedMotion(reduceMotion.checked));
 clockEnabled.checked = localStorage.getItem("clockEnabled") !== "false";
+militaryTime.checked = localStorage.getItem("militaryTime") === "true";
 batteryEnabled.checked = localStorage.getItem("batteryEnabled") !== "false";
 clockEnabled.addEventListener("change", () => setClockPreference(clockEnabled.checked));
+militaryTime.addEventListener("change", () => setMilitaryTimePreference(militaryTime.checked));
 batteryEnabled.addEventListener("change", () => setBatteryPreference(batteryEnabled.checked));
 syncStatusToggles();
 gamePlayerClose.addEventListener("click", () => closeGamePlayer());
