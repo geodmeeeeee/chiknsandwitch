@@ -952,6 +952,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "Stardew Valley",
+    image: "images/Stardew Valley.jpg",
+    url: "games/Stardew Valley/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Stickman Hook",
     image: "images/Stickman Hook.jpg",
     url: "games/Stickman Hook/index.html",
