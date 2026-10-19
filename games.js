@@ -502,12 +502,6 @@ const games = [
     tags: ["simulation"]
   },
   {
-    title: "Geometry Dash",
-    image: "images/Geometry Dash.jpg",
-    url: "games/Geometry Dash/index.html",
-    tags: ["clicker","platformer"]
-  },
-  {
     title: "Getaway Shootout",
     image: "images/Getaway Shootout.jpg",
     url: "games/Getaway Shootout/index.html",
