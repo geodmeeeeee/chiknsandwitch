@@ -358,12 +358,6 @@ const games = [
     tags: ["platformer"]
   },
   {
-    title: "Deltarune",
-    image: "images/Deltarune.jpg",
-    url: "games/Deltarune/index.html",
-    tags: ["platformer", "puzzle"]
-  },
-  {
     title: "Dont You Lecture Me About Your 30 Dollar Website",
     image: "images/Dont You Lecture Me About Your 30 Dollar Website.jpg",
     url: "games/Dont You Lecture Me About Your 30 Dollar Website/index.html",
