@@ -796,6 +796,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Papas Cheeseria",
+    image: "images/Papas Cheeseria.jpg",
+    url: "games/Papas Cheeseria/index.html",
+    tags: ["simulation"]
+  },
+  {
     title: "Papas Pastaria",
     image: "images/Papas Pastaria.jpg",
     url: "games/Papas Pastaria/index.html",
