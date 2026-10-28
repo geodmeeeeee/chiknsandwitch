@@ -1,9 +1,4 @@
 {
   "name": "Chiknsandwitch - Dev Environment",
-  
-
-  "image": "://microsoft.com",
-  
-
-  "updateContentCommand": "git sparse-checkout init --no-cone && git sparse-checkout set '/*' '!/games/'"
+  "updateContentCommand": "git sparse-checkout init --no-cone && git sparse-checkout set '/*' '!/games/' '!/games/**'"
 }
