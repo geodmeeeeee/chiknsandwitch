@@ -1,0 +1,9 @@
+{
+  "name": "Chiknsandwitch - Dev Environment",
+  
+  // Lightweight Node.js base image for standard web development
+  "image": "://microsoft.com",
+  
+  // Customizes Git sparse-checkout to exclude the games folder
+  "updateContentCommand": "git sparse-checkout init --no-cone && git sparse-checkout set '/*' '!/games/'"
+}
