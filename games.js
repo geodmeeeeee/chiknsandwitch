@@ -430,6 +430,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Escape Road 2",
+    image: "images/Escape Road 2.jpg",
+    url: "https://geodmeeeeee.github.io/crabfish/Escape%20Road%202/index.html",
+    tags: ["driving"]
+  },
+  {
     title: "Fancy Pants Adventure",
     image: "images/Fancy Pants Adventure.jpg",
     url: "games/Fancy Pants Adventure/index.html",
