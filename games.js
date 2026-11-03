@@ -418,6 +418,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Dune",
+    image: "images/Dune.jpg",
+    url: "games/Dune/index.html",
+    tags: ["platformer"]
+  },
+  {
     title: "Eggy Car",
     image: "images/Eggy Car.jpg",
     url: "games/Eggy Car/index.html",
