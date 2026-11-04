@@ -876,7 +876,7 @@ const games = [
   {
     title: "Riddle School 2",
     image: "images/Riddle School 2.jpg",
-    url: "games/Riddle School 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Riddle%20School%202/",
     tags: ["puzzle"]
   },
   {
