@@ -294,7 +294,7 @@ const games = [
   {
     title: "Clustertruck",
     image: "images/Clustertruck.jpg",
-    url: "games/Clustertruck/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Clustertruck/",
     tags: ["platformer"]
   },
   {
