@@ -1088,7 +1088,7 @@ const games = [
     image: "images/Worlds Hardest Game.jpg",
     url: "games/Worlds Hardest Game/index.html",
     tags: ["puzzle"]
-  }
+  },
   {
     title: "Soccer Random",
     image: "images/Soccer Random.jpg",
