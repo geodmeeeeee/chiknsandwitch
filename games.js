@@ -438,7 +438,7 @@ const games = [
   {
     title: "Fancy Pants Adventure",
     image: "images/Fancy Pants Adventure.jpg",
-    url: "games/Fancy Pants Adventure/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Fancy%20Pants%20Adventure/index.html",
     tags: ["platformer"]
   },
   {
