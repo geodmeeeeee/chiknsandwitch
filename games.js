@@ -492,7 +492,7 @@ const games = [
   {
     title: "Gamble With Your Friends",
     image: "images/Gamble With Your Friends.jpg",
-    url: "games/Gamble With Your Friends/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Gamble%20With%20Your%20Friends/",
     tags: ["simulation"]
   },
   {
