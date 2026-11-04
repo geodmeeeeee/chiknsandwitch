@@ -912,7 +912,7 @@ const games = [
   {
     title: "Sensory Overload",
     image: "images/Sensory Overload.jpg",
-    url: "games/Sensory Overload/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Sensory%20Overload/",
     tags: ["simulation"]
   },  
   {
