@@ -678,7 +678,7 @@ const games = [
   {
     title: "Kill Ice Age Baby Adventure 2",
     image: "images/Kill Ice Age Baby Adventure 2.jpg",
-    url: "games/Kill Ice Age Baby Adventure 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Kill%20Ice%20Age%20Baby%20Adventure%202/",
     tags: ["simulator"]
   },
   {
