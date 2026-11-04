@@ -984,7 +984,7 @@ const games = [
   {
     title: "The Binding Of Issac Repentance",
     image: "images/The Binding Of Issac Repentance.jpg",
-    url: "games/The Binding Of Issac Repentance/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/The%20Binding%20Of%20Issac%20Repentance/index.html",
     tags: ["adventure"]
   },
   {
