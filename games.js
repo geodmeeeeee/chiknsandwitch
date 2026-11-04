@@ -990,7 +990,7 @@ const games = [
   {
     title: "The Binding Of Issac Wrath Of The Lamb",
     image: "images/The Binding Of Issac Wrath Of The Lamb.jpg",
-    url: "games/The Binding Of Issac Wrath Of The Lamb/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/The%20Binding%20Of%20Issac%20Wrath%20Of%20The%20Lamb/",
     tags: ["adventure"]
   },
     {
