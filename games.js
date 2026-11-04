@@ -462,7 +462,7 @@ const games = [
   {
     title: "Five Nights At Epsteins",
     image: "images/Five Nights At Epsteins.jpg",
-    url: "games/Five Nights At Epsteins/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Five%20Nights%20At%20Epsteins/",
     tags: ["horror"]
   },
   {
