@@ -684,7 +684,7 @@ const games = [
   {
     title: "Kour.io",
     image: "images/Kour.io.jpg",
-    url: "games/Kour.io/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Kour.io/",
     tags: ["shooter"]
   },
   {
