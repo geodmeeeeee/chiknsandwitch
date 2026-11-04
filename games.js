@@ -1083,4 +1083,10 @@ const games = [
     url: "games/Worlds Hardest Game/index.html",
     tags: ["puzzle"]
   }
+  {
+    title: "Soccer Random",
+    image: "images/Soccer Random.jpg",
+    url: "https://geodmeeeeee.github.io/crabfish/Soccer%20Random/index.html",
+    tags: ["sports"]
+  }
 ];
