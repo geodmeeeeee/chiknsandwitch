@@ -552,7 +552,7 @@ const games = [
   {
     title: "Half Life",
     image: "images/Half Life.jpg",
-    url: "games/Half Life/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Half%20Life/",
     tags: ["shooter"]
   },
   {
