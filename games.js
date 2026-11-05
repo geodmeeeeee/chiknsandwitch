@@ -114,7 +114,7 @@ const games = [
   {
     title: "Bacon May Die",
     image: "images/Bacon May Die.jpg",
-    url: "games/Bacon May Die/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bacon%20May%20Die/",
     tags: ["platformer"]
   },
   {
