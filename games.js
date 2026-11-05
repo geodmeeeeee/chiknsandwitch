@@ -174,7 +174,7 @@ const games = [
   {
     title: "Block Blast",
     image: "images/Block Blast.jpg",
-    url: "games/Block Blast/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Block%20Blast/",
     tags: ["puzzle"]
   },
   {
