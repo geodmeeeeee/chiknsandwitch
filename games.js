@@ -48,7 +48,7 @@ const games = [
   {
     title: "40xEscape",
     image: "images/40xEscape.jpg",
-    url: "games/40xEscape/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/40xEscape/",
     tags: ["puzzle"]
   },
   {
