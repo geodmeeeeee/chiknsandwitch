@@ -162,7 +162,7 @@ const games = [
   {
     title: "Bitplanes",
     image: "images/Bitplanes.jpg",
-    url: "games/Bitplanes/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bitplanes/",
     tags: ["simulation"]
   },
   {
