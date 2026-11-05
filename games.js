@@ -360,7 +360,7 @@ const games = [
   {
     title: "Dont You Lecture Me About Your 30 Dollar Website",
     image: "images/Dont You Lecture Me About Your 30 Dollar Website.jpg",
-    url: "games/Dont You Lecture Me About Your 30 Dollar Website/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Dont%20You%20Lecture%20Me%20About%20Your%2030%20Dollar%20Website/",
     tags: ["simulation"]
   },
   {
