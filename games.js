@@ -180,7 +180,7 @@ const games = [
   {
     title: "Blocky Snakes",
     image: "images/Blocky Snakes.jpg",
-    url: "games/Blocky Snakes/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Blocky%20Snakes/",
     tags: ["multiplayer"]
   },
     {
