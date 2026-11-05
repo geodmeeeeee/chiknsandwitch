@@ -138,7 +138,7 @@ const games = [
   {
     title: "Basket Random",
     image: "images/Basket Random.jpg",
-    url: "games/Basket Random/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Basket%20Random/",
     tags: ["sports","multiplayer"]
   },
   {
