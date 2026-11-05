@@ -198,7 +198,7 @@ const games = [
   {
     title: "Bloons Tower Defense 2",
     image: "images/Bloons Tower Defense 2.jpg",
-    url: "games/Bloons Tower Defense 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bloons%20Tower%20Defense%202/",
     tags: ["strategy"]
   },
   {
