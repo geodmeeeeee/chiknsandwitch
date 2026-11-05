@@ -690,7 +690,7 @@ const games = [
   {
     title: "Leader Strike",
     image: "images/Leader Strike.jpg",
-    url: "games/Leader Strike/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Leader%20Strike/",
     tags: ["shooter"]
   },
   {
