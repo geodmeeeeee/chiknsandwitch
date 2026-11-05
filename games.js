@@ -90,7 +90,7 @@ const games = [
   {
     title: "Adventure capitalist",
     image: "images/Adventure Capitalist.jpg",
-    url: "games/Adventure Capitalist/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Adventure%20Capitalist/",
     tags: ["clicker"]
   },
   {
