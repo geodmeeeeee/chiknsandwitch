@@ -54,7 +54,7 @@ const games = [
   {
     title: "60 Second Burger Run",
     image: "images/60 Second Burger Run.jpg",
-    url: "games/60 Second Burger Run/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/60%20Second%20Burger%20Run/",
     tags: ["platformer"]
   },
   {
