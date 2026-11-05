@@ -60,7 +60,7 @@ const games = [
   {
     title: "2048",
     image: "images/2048.jpg",
-    url: "games/2048/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/2048/",
     tags: ["puzzle"]
   },
   {
