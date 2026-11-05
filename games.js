@@ -132,7 +132,7 @@ const games = [
   {
     title: "Bad Piggies",
     image: "images/Bad Piggies.jpg",
-    url: "games/Bad Piggies/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bad%20Piggies/",
     tags: ["platformer"]
   },
   {
