@@ -36,7 +36,7 @@ const games = [
   {
     title: "4th And Goal",
     image: "images/4th And Goal.jpg",
-    url: "games/4th And Goal/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/4th%20And%20Goal/",
     tags: ["sports"]
   },
   {
