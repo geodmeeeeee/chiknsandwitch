@@ -30,7 +30,7 @@ const games = [
   {
     title: "3D Moto Simulator",
     image: "images/3D Moto Simulator.jpg",
-    url: "games/3D Moto Simulator/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/3D%20Moto%20Simulator/",
     tags: ["driving"]
   },
   {
