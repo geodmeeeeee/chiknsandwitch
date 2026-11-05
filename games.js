@@ -186,7 +186,7 @@ const games = [
     {
     title: "Blocky Trials",
     image: "images/Blocky Trials.jpg",
-    url: "games/Blocky Trials/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Blocky%20Trials/",
     tags: ["driving"]
   },
   {
