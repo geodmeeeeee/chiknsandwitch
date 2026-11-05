@@ -156,7 +156,7 @@ const games = [
   {
     title: "Bitlife",
     image: "images/Bitlife.jpg",
-    url: "games/Bitlife/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bitlife/",
     tags: ["simulation"]
   },
   {
