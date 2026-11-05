@@ -1038,7 +1038,7 @@ const games = [
   {
     title: "Tunnel Rush",
     image: "images/Tunnel Rush.jpg",
-    url: "games/Tunnel Rush/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Tunnel%20Rush/",
     tags: ["simulation"]
   },
   {
