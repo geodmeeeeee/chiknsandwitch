@@ -126,7 +126,7 @@ const games = [
   {
     title: "Bad Ice Cream 2",
     image: "images/Bad Ice Cream 2.jpg",
-    url: "games/Bad Ice Cream 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bad%20Ice%20Cream%202/",
     tags: ["platformer"]
   },
   {
