@@ -66,7 +66,7 @@ const games = [
   {
     title: "A Dance Of Fire And Ice",
     image: "images/A Dance Of Fire And Ice.jpg",
-    url: "games/A Dance Of Fire And Ice/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/A%20Dance%20Of%20Fire%20And%20Ice/",
     tags: ["rythm"]
   },
   {
