@@ -42,7 +42,7 @@ const games = [
   {
     title: "10 Minutes Till Dawn",
     image: "images/10 Minutes Till Dawn.jpg",
-    url: "games/10 Minutes Till Dawn/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/10%20Minutes%20Till%20Dawn/",
     tags: ["shooter"]
   },
   {
