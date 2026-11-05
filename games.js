@@ -108,7 +108,7 @@ const games = [
   {
     title: "Age Of War 2",
     image: "images/Age Of War 2.jpg",
-    url: "games/Age Of War 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Age%20Of%20War%202/",
     tags: ["strategy"]
   },
   {
