@@ -150,7 +150,7 @@ const games = [
   {
     title: "Bee Swarm Simulator",
     image: "images/Bee Swarm Simulator.jpg",
-    url: "games/Bee Swarm Simulator/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bee%20Swarm%20Simulator/",
     tags: ["simulation"]
   },
   {
