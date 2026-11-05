@@ -18,7 +18,7 @@ const games = [
   {
     title: "1 on 1 Soccer",
     image: "images/1 on 1 Soccer.jpg",
-    url: "games/1 on 1 Soccer/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/1%20on%201%20Soccer/",
     tags: ["sports", "multiplayer"]
   },
   {
