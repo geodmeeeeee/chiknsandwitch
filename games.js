@@ -24,7 +24,7 @@ const games = [
   {
     title: "2 Minute Football",
     image: "images/2 Minute Football.jpg",
-    url: "games/2 Minute Football/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/2%20Minute%20Football/",
     tags: ["sports"]
   },
   {
