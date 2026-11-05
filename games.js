@@ -144,7 +144,7 @@ const games = [
   {
     title: "Basketball Stars",
     image: "images/Basketball Stars.jpg",
-    url: "games/Basketball Stars/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Basketball%20Stars/",
     tags: ["sports"]
   },
   {
