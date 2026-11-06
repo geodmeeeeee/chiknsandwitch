@@ -204,91 +204,91 @@ const games = [
   {
     title: "Bloons Tower Defense 3",
     image: "images/Bloons Tower Defense 3.jpg",
-    url: "games/Bloons Tower Defense 3/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bloons%20Tower%20Defense%203/",
     tags: ["strategy"]
   },
   {
     title: "Bloons Tower Defense 4",
     image: "images/Bloons Tower Defense 4.jpg",
-    url: "games/Bloons Tower Defense 4/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bloons%20Tower%20Defense%204/",
     tags: ["strategy"]
   },
   {
     title: "Bloons Tower Defense 5",
     image: "images/Bloons Tower Defense 5.jpg",
-    url: "games/Bloons Tower Defense 5/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bloons%20Tower%20Defense%205/",
     tags: ["strategy"]
   },
   {
     title: "Bloxorz",
     image: "images/Bloxorz.jpg",
-    url: "games/Bloxorz/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bloxorz/",
     tags: ["puzzle"]
   },
   {
     title: "Bob The Robber 2",
     image: "images/Bob The Robber 2.jpg",
-    url: "games/Bob The Robber 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bob%20The%20Robber%202/",
     tags: ["puzzle"]
   },
   {
     title: "Bob The Robber 4",
     image: "images/Bob The Robber 4.jpg",
-    url: "games/Bob The Robber 4/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bob%20The%20Robber%204/",
     tags: ["puzzle"]
   },
   {
     title: "Bouncy Motors",
     image: "images/Bouncy Motors.jpg",
-    url: "games/Bouncy Motors/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Bouncy%20Motors/",
     tags: ["driving"]
   },
   {
     title: "Boxing random",
     image: "images/Boxing random.jpg",
-    url: "games/Boxing Random/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Boxing%20Random/",
     tags: ["sports", "multiplayer"]
   },
   {
     title: "Brotato",
     image: "images/Brotato.jpg",
-    url: "games/Brotato/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Brotato/",
     tags: ["simulation"]
   },
   {
     title: "Candy Crush",
     image: "images/Candy Crush.jpg",
-    url: "games/Candy Crush/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Candy%20Crush/",
     tags: ["simulation"]
   },
   {
     title: "Cannon Basketball 4",
     image: "images/Cannon Basketball 4.jpg",
-    url: "games/Cannon Basketball 4/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Cannon%20Basketball%204/",
     tags: ["sports"]
   },
   {
     title: "Capybara Clicker",
     image: "images/Capybara Clicker.jpg",
-    url: "games/Capybara Clicker/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Capybara%20Clicker/",
     tags: ["clicker"]
   },
   {
     title: "Car Simulator Arena",
     image: "images/Car Simulator Arena.jpg",
-    url: "games/Car Simulator Arena/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Car%20Simulator%20Arena/",
     tags: ["driving"]
   },
   {
     title: "Choppy Orc",
     image: "images/Choppy Orc.jpg",
-    url: "games/Choppy Orc/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Choppy%20Orc/",
     tags: ["platformer"]
   },
   {
     title: "Cluster Rush",
     image: "images/Cluster Rush.jpg",
-    url: "games/Cluster Rush/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Cluster%20Rush/",
     tags: ["platformer"]
   },
   {
@@ -298,63 +298,57 @@ const games = [
     tags: ["platformer"]
   },
   {
-    title: "Color Tunnel 2",
-    image: "images/Color Tunnel 2.jpg",
-    url: "games/Color Tunnel 2/index.html",
-    tags: ["simulation"]
-  },
-  {
     title: "Cookie Clicker",
     image: "images/Cookie Clicker.jpg",
-    url: "games/Cookie Clicker/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Cookie%20Clicker/",
     tags: ["clicker"]
   },
   {
     title: "Core Ball",
     image: "images/Core Ball.jpg",
-    url: "games/Core Ball/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Core%20Ball/",
     tags: ["clicker"]
   },
   {
     title: "Crazy Cars",
     image: "images/Crazy Cars.jpg",
-    url: "games/Crazy Cars/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Crazy%20Cars/",
     tags: ["driving"]
   },
   {
     title: "Crazy Cattle 3D",
     image: "images/Crazy Cattle 3D.jpg",
-    url: "games/Crazy Cattle 3D/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Crazy%20Cattle%203D/",
     tags: ["simulation"]
   },
   {
     title: "Crazy Motorcycle",
     image: "images/Crazy Motorcycle.jpg",
-    url: "games/Crazy Motorcycle/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Crazy%20Motorcycle/",
     tags: ["driving"]
   },
   {
     title: "Crossy Road",
     image: "images/Crossy Road.jpg",
-    url: "games/Crossy Road/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Crossy%20Road/",
     tags: ["platformer"]
   },
   {
     title: "Cyber Cars Punk Racing",
     image: "images/Cyber Cars Punk Racing.jpg",
-    url: "games/Cyber Cars Punk Racing/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Cyber%20Cars%20Punk%20Racing/",
     tags: ["driving"]
   },
   {
     title: "Dad N Me",
     image: "images/Dad N Me.jpg",
-    url: "games/Dad N Me/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Dad%20N%20Me/",
     tags: ["fighting"]
   },
   {
     title: "Death Run 3D",
     image: "images/Death Run 3D.jpg",
-    url: "games/Death Run 3D/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Death%20Run%203D/",
     tags: ["platformer"]
   },
   {
@@ -366,67 +360,67 @@ const games = [
   {
     title: "Draw The Hill",
     image: "images/Draw The Hill.jpg",
-    url: "games/Draw The Hill/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Draw%20The%20Hill/",
     tags: ["simulation"]
   },
   {
     title: "Dreadhead Parkour",
     image: "images/Dreadhead Parkour.jpg",
-    url: "games/Dreadhead Parkour/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Dreadhead%20Parkour/",
     tags: ["platformer"]
   },
   {
     title: "Drift Boss",
     image: "images/Drift Boss.jpg",
-    url: "games/Drift Boss/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Drift%20Boss/",
     tags: ["driving"]
   },
   {
     title: "Drive Mad",
     image: "images/Drive Mad.jpg",
-    url: "games/Drive Mad/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Drive%20Mad/",
     tags: ["driving"]
   },
   {
     title: "Duck Life",
     image: "images/Duck Life.jpg",
-    url: "games/Duck Life/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Duck%20Life/",
     tags: ["simulation"]
   },
   {
     title: "Duck Life 2",
     image: "images/Duck Life 2.jpg",
-    url: "games/Duck Life 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Duck%20Life%202/",
     tags: ["simulation"]
   },
   {
     title: "Duck Life 3",
     image: "images/Duck Life 3.jpg",
-    url: "games/Duck Life 3/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Duck%20Life%203/",
     tags: ["simulation"]
   },
   {
     title: "Duck Life 4",
     image: "images/Duck Life 4.jpg",
-    url: "games/Duck Life 4/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Duck%20Life%204/",
     tags: ["simulation"]
   },
   {
     title: "Duck Life 5",
     image: "images/Duck Life 5.jpg",
-    url: "games/Duck Life 5/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Duck%20Life%205/",
     tags: ["simulation"]
   },
   {
     title: "Eggy Car",
     image: "images/Eggy Car.jpg",
-    url: "games/Eggy Car/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Eggy%20Car/",
     tags: ["driving"]
   },
   {
     title: "Escape Road",
     image: "images/Escape Road.jpg",
-    url: "games/Escape Road/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Escape%20Road/",
     tags: ["driving"]
   },
   {
@@ -444,19 +438,19 @@ const games = [
   {
     title: "Fireboy And Watergirl 2 Light Temple",
     image: "images/Fireboy And Watergirl 2 Light Temple.jpg",
-    url: "games/Fireboy And Watergirl 2 Light Temple/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Fireboy%20And%20Watergirl%202%20Light%20Temple/",
     tags: ["platformer","multiplayer"]
   },
   {
     title: "Fireboy And Watergirl 3 Ice Temple",
     image: "images/Fireboy And Watergirl 3 Ice Temple.jpg",
-    url: "games/Fireboy And Watergirl 3 Ice Temple/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Fireboy%20And%20Watergirl%203%20Ice%20Temple/",
     tags: ["platformer","multiplayer"]
   },
   {
     title: "Fireboy And Watergirl In The Forest Temple",
     image: "images/Fireboy And Watergirl In The Forest Temple.jpg",
-    url: "games/Fireboy And Watergirl In The Forest Temple/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Fireboy%20And%20Watergirl%20In%20The%20Forest%20Temple/",
     tags: ["platformer","multiplayer"]
   },
   {
@@ -468,25 +462,25 @@ const games = [
   {
     title: "Flick Goal",
     image: "images/Flick Goal.jpg",
-    url: "games/Flick Goal/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Flick%20Goal/",
     tags: ["sports"]
   },
   {
     title: "Football Legends",
     image: "images/Football Legends.jpg",
-    url: "games/Football Legends/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Football%20Legends/",
     tags: ["sports"]
   },
   {
     title: "Fruit Ninja",
     image: "images/Fruit Ninja.jpg",
-    url: "games/Fruit Ninja/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Fruit%20Ninja/",
     tags: ["clicker"]
   },
   {
     title: "Funny Shooter",
     image: "images/Funny Shooter.jpg",
-    url: "games/Funny Shooter/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Funny%20Shooter/",
     tags: ["shooter"]
   },
   {
@@ -498,55 +492,55 @@ const games = [
   {
     title: "Getaway Shootout",
     image: "images/Getaway Shootout.jpg",
-    url: "games/Getaway Shootout/index.html",
+    url: "geodmeeeeee.github.io/crabfish/Getaway Shootout",
     tags: ["platformer", "shooter", "multiplayer"]
   },
   {
     title: "Gladihoppers",
     image: "images/Gladihoppers.jpg",
-    url: "games/Gladihoppers/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Gladihoppers/",
     tags: ["fighting"]
   },
   {
     title: "Google Dino",
     image: "images/Google Dino.jpg",
-    url: "games/Google Dino/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Google%20Dino/",
     tags: ["platformer"]
   },
   {
     title: "Granny",
     image: "images/Granny.jpg",
-    url: "games/Granny/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Granny/",
     tags: ["horror"]
   },
   {
     title: "Granny 2",
     image: "images/Granny 2.jpg",
-    url: "games/Granny 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Granny%202/",
     tags: ["horror"]
   },
   {
     title: "Gun Mayhem 2",
     image: "images/Gun Mayhem 2.jpg",
-    url: "games/Gun Mayhem 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Gun%20Mayhem%202/",
     tags: ["shooter"]
   },
   {
     title: "Gun Mayhem 3",
     image: "images/Gun Mayhem 3.jpg",
-    url: "games/Gun Mayhem 3/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Gun%20Mayhem%203/",
     tags: ["shooter"]
   },
   {
     title: "Gunfest",
     image: "images/Gunfest.jpg",
-    url: "games/Gunfest/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Gunfest/",
     tags: ["shooter"]
   },
   {
     title: "Gunspin",
     image: "images/Gunspin.jpg",
-    url: "games/Gunspin/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Gunspin/",
     tags: ["shooter"]
   },
   {
@@ -558,121 +552,121 @@ const games = [
   {
     title: "Henry Stickman Breaking The Bank",
     image: "images/Henry Stickman Breaking The Bank.jpg",
-    url: "games/Henry Stickman Breaking The Bank/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Henry%20Stickman%20Breaking%20The%20Bank/",
     tags: ["puzzle"]
   },
   {
     title: "Henry Stickman Escaping The Prison",
     image: "images/Henry Stickman Escaping The Prison.jpg",
-    url: "games/Henry Stickman Escaping The Prison/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Henry%20Stickman%20Escaping%20The%20Prison/",
     tags: ["puzzle"]
   },
   {
     title: "Henry Stickman Infiltrating The Airship ",
     image: "images/Henry Stickman Infiltrating The Airship.jpg",
-    url: "games/Henry Stickman Infiltrating The Airship/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Henry%20Stickman%20Infiltrating%20The%20Airship/",
     tags: ["puzzle"]
   },
   {
     title: "Henry Stickman Stealing The Diamond ",
     image: "images/Henry Stickman Stealing The Diamond.jpg",
-    url: "games/Henry Stickman Stealing The Diamond/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Henry%20Stickman%20Stealing%20The%20Diamond/",
     tags: ["puzzle"]
   },
   {
     title: "Highway Bike Simulator",
     image: "images/Highway Bike Simulator.jpg",
-    url: "games/Highway Bike Simulator/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Highway%20Bike%20Simulator/",
     tags: ["driving"]
   },
   {
     title: "Hobo",
     image: "images/Hobo.jpg",
-    url: "games/Hobo/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo/",
     tags: ["fighting"]
   },
   {
     title: "Hobo 2 Prison Brawl",
     image: "images/Hobo 2 Prison Brawl.jpg",
-    url: "games/Hobo 2 Prison Brawl/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo%202%20Prison%20Brawl/",
     tags: ["fighting"]
   },
   {
     title: "Hobo 3 Wanted",
     image: "images/Hobo 3 Wanted.jpg",
-    url: "games/Hobo 3 Wanted/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo%203%20Wanted/",
     tags: ["fighting"]
   },
   {
     title: "Hobo 4 Total War",
     image: "images/Hobo 4 Total War.jpg",
-    url: "games/Hobo 4 Total War/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo%204%20Total%20War/",
     tags: ["fighting"]
   },
   {
     title: "Hobo 5 Space Brawl",
     image: "images/Hobo 5 Space Brawl.jpg",
-    url: "games/Hobo 5 Space Brawl/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo%205%20Space%20Brawl/",
     tags: ["fighting"]
   },
   {
     title: "Hobo 6 Hell",
     image: "images/Hobo 6 Hell.jpg",
-    url: "games/Hobo 6 Hell/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo%206%20Hell/",
     tags: ["fighting"]
   },
     {
     title: "Hobo 7 Heaven",
     image: "images/Hobo 7 Heaven.jpg",
-    url: "games/Hobo 7 Heaven/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Hobo%207%20Heaven/",
     tags: ["fighting"]
   },
   {
     title: "House Of Hazards",
     image: "images/House Of Hazards.jpg",
-    url: "games/House Of Hazards/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/House%20Of%20Hazards/",
     tags: ["simulation","multiplayer"]
   },
   {
     title: "Idle Breakout",
     image: "images/Idle Breakout.jpg",
-    url: "games/Idle Breakout/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Idle%20Breakout/",
     tags: ["clicker"]
   },
   {
     title: "Idle Football Manager",
     image: "images/Idle Football Manager.jpg",
-    url: "games/Idle Football Manager/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Idle%20Football%20Manager/",
     tags: ["clicker"]
   },
   {
     title: "Into Space 2",
     image: "images/Into Space 2.jpg",
-    url: "games/Into Space 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Into%20Space%202/",
     tags: ["simulation"]
   },
   {
     title: "Iron Lung",
     image: "images/Iron Lung.jpg",
-    url: "games/Iron Lung/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Iron%20Lung/",
     tags: ["horror"]
   },
   {
     title: "Iron Snout",
     image: "images/Iron Snout.jpg",
-    url: "games/Iron Snout/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Iron%20Snout/",
     tags: ["fighting"]
   },
   {
     title: "Jelly Mario",
     image: "images/Jelly Mario.jpg",
-    url: "games/Jelly Mario/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Jelly%20Mario/",
     tags: ["platformer"]
   },
   {
     title: "Jumping Shell",
     image: "images/Jumping Shell.jpg",
-    url: "games/Jumping Shell/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Jumping%20Shell/",
     tags: ["platformer"]
   },
   {
@@ -696,181 +690,181 @@ const games = [
   {
     title: "Learn To Fly",
     image: "images/Learn To Fly.jpg",
-    url: "games/Learn To Fly/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Learn%20To%20Fly/",
     tags: ["platformer"]
   },
   {
     title: "Learn To Fly 2 ",
     image: "images/Learn To Fly 2.jpg",
-    url: "games/Learn To Fly 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Learn%20To%20Fly%202/",
     tags: ["platformer"]
   },
   {
     title: "Learn To Fly 3",
     image: "images/Learn To Fly 3.jpg",
-    url: "games/Learn To Fly 3/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Learn%20To%20Fly%203/",
     tags: ["platformer"]
   },
   {
     title: "Mini Paint",
     image: "images/Mini Paint.jpg",
-    url: "games/Mini Paint/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Mini%20Paint/",
     tags: ["art"]
   },
   {
     title: "Monkey Mart",
     image: "images/Monkey Mart.jpg",
-    url: "games/Monkey Mart/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Monkey%20Mart/",
     tags: ["tycoon"]
   },
   {
     title: "Monster Tracks",
     image: "images/Monster Tracks.jpg",
-    url: "games/Monster Tracks/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Monster%20Tracks/",
     tags: ["driving"]
   },
   {
     title: "Moto X3M",
     image: "images/Moto X3M.jpg",
-    url: "games/Moto X3M/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Moto%20X3M/",
     tags: ["driving"]
   },
   {
     title: "Moto X3M 2",
     image: "images/Moto X3M 2.jpg",
-    url: "games/Moto X3M 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Moto%20X3M%202/",
     tags: ["driving"]
   },
   {
     title: "Moto X3M Pool Party",
     image: "images/Moto X3M Pool Party.jpg",
-    url: "games/Moto X3M Pool Party/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Moto%20X3M%20Pool%20Party/",
     tags: ["driving"]
   },
   {
     title: "Moto X3M Spooky Land",
     image: "images/Moto X3M Spooky Land.jpg",
-    url: "games/Moto X3M Spooky Land/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Moto%20X3M%20Spooky%20Land/",
     tags: ["driving"]
   },
   {
     title: "Moto X3M Winter",
     image: "images/Moto X3M Winter.jpg",
-    url: "games/Moto X3M Winter/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Moto%20X3M%20Winter/",
     tags: ["driving"]
   },
   {
     title: "Moving Truck Bounty",
     image: "images/Moving Truck Bounty.jpg",
-    url: "games/Moving Truck Bounty/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Moving%20Truck%20Bounty/",
     tags: ["driving"]
   },
   {
     title: "My Dream Hospital",
     image: "images/My Dream Hospital.jpg",
-    url: "games/My Dream Hospital/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/My%20Dream%20Hospital/",
     tags: ["simulation"]
   },
   {
     title: "Ninja VS Evilcorp",
     image: "images/Ninja VS Evilcorp.jpg",
-    url: "games/Ninja VS Evilcorp/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Ninja%20VS%20Evilcorp/",
     tags: ["platformer"]
   },
   {
     title: "OvO",
     image: "images/OvO.jpg",
-    url: "games/OvO/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/OvO/",
     tags: ["platformer"]
   },
   {
     title: "OvO Dimensions",
     image: "images/OvO Dimensions.jpg",
-    url: "games/OvO Dimensions/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/OvO%20Dimensions/",
     tags: ["platformer"]
   },
   {
     title: "Papas Bakeria",
     image: "images/Papas Bakeria.jpg",
-    url: "games/Papas Bakeria/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Papas%20Bakeria/",
     tags: ["simulation"]
   },
   {
     title: "Papas Burgeria",
     image: "images/Papas Burgeria.jpg",
-    url: "games/Papas Burgeria/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Papas%20Burgeria/",
     tags: ["simulation"]
   },
   {
     title: "Papas Cheeseria",
     image: "images/Papas Cheeseria.jpg",
-    url: "games/Papas Cheeseria/index.html",
+    url: "ghttps://geodmeeeeee.github.io/crabfish/Papas%20Cheeseria/",
     tags: ["simulation"]
   },
   {
     title: "Papas Pastaria",
     image: "images/Papas Pastaria.jpg",
-    url: "games/Papas Pastaria/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Papas%20Pastaria/",
     tags: ["simulation"]
   },
   {
     title: "Papas Tacomia",
     image: "images/Papas Tacomia.jpg",
-    url: "games/Papas Tacomia/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Papas%20Tacomia/",
     tags: ["simulation"]
   },
   {
     title: "Parking Fury",
     image: "images/Parking Fury.jpg",
-    url: "games/Parking Fury/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Parking%20Fury/",
     tags: ["driving"]
   },
   {
     title: "Parking Fury 2",
     image: "images/Parking Fury 2.jpg",
-    url: "games/Parking Fury 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Parking%20Fury%202/",
     tags: ["driving"]
   },
   {
     title: "Peak",
     image: "images/Peak.jpg",
-    url: "games/Peak/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Peak/?cdn=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fwasmdotrip%2FPeak-Port%40main",
     tags: ["platformer","sports"]
   },
   {
     title: "Plants VS Zombies",
     image: "images/Plants VS Zombies.jpg",
-    url: "games/Plants VS Zombies/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Plants%20VS%20Zombies/",
     tags: ["strategy"]
   },
   {
     title: "Polytrack",
     image: "images/polytrack.jpg",
-    url: "games/polytrack/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/polytrack/",
     tags: ["driving"]
   },
   {
     title: "Ragdoll Archers",
     image: "images/Ragdoll Archers.jpg",
-    url: "games/Ragdoll Archers/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Ragdoll%20Archers/",
     tags: ["puzzle"]
   },
   {
     title: "Ragdoll Hit",
     image: "images/Ragdoll Hit.jpg",
-    url: "games/Ragdoll Hit/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Ragdoll%20Hit/",
     tags: ["puzzle"]
   },
   {
     title: "Retro Bowl",
     image: "images/Retro Bowl.jpg",
-    url: "games/Retro Bowl/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Retro%20Bowl/",
     tags: ["sports"]
   },
   {
     title: "Riddle School",
     image: "images/Riddle School.jpg",
-    url: "games/Riddle School/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Riddle%20School/",
     tags: ["puzzle"]
   },
   {
@@ -882,31 +876,31 @@ const games = [
   {
     title: "Riddle School 4",
     image: "images/Riddle School 4.jpg",
-    url: "games/Riddle School 4/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Riddle%20School%204/",
     tags: ["puzzle"]
   },
   {
     title: "Rooftop Snipers",
     image: "images/Rooftop Snipers.jpg",
-    url: "games/Rooftop Snipers/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Rooftop%20Snipers/",
     tags: ["shooter","platformer","multiplayer"]
   },
   {
     title: "Run",
     image: "images/Run.jpg",
-    url: "games/Run/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Run/",
     tags: ["platformer"]
   },
   {
     title: "Run 2",
     image: "images/Run 2.jpg",
-    url: "games/Run 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Run%202/",
     tags: ["platformer"]
   },
   {
     title: "Run 3",
     image: "images/Run 3.jpg",
-    url: "games/Run 3/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Run%203/",
     tags: ["platformer"]
   },  
   {
@@ -918,61 +912,61 @@ const games = [
   {
     title: "Slope",
     image: "images/Slope.jpg",
-    url: "games/Slope/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Slope/",
     tags: ["platformer"]
   },
   {
     title: "Slow Roads",
     image: "images/Slow Roads.jpg",
-    url: "games/Slow Roads/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Slow%20Roads/",
     tags: ["driving"]
   },
   {
     title: "Space Waves",
     image: "images/Space Waves.jpg",
-    url: "games/Space Waves/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Space%20Waves/",
     tags: ["platformer"]
   },
   {
     title: "Spacebar Clicker",
     image: "images/Spacebar Clicker.jpg",
-    url: "games/Spacebar Clicker/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Spacebar%20Clicker/",
     tags: ["clicker"]
   },
   {
     title: "Speed Stars",
     image: "images/Speed Stars.jpg",
-    url: "games/Speed Stars/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Speed%20Stars/",
     tags: ["sports"]
   },
   {
     title: "Stardew Valley",
     image: "images/Stardew Valley.jpg",
-    url: "games/Stardew Valley/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Stardew%20Valley/",
     tags: ["simulation"]
   },
   {
     title: "Stickman Hook",
     image: "images/Stickman Hook.jpg",
-    url: "games/Stickman Hook/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Stickman%20Hook/",
     tags: ["platformer"]
   },
   {
     title: "Subway Surfers Beijing",
     image: "images/Subway Surfers Beijing.jpg",
-    url: "games/Subway Surfers Beijing/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Subway%20Surfers%20Beijing/",
     tags: ["platformer"]
   },
   {
     title: "Super Mario 64",
     image: "images/Super Mario 64.jpg",
-    url: "games/Super Mario 64/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Super%20Mario%2064/",
     tags: ["platformer"]
   },
   {
     title: "Table Tennis World Tour",
     image: "images/Table Tennis World Tour.jpg",
-    url: "games/Table Tennis World Tour/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Table%20Tennis%20World%20Tour/",
     tags: ["sports"]
   },
   {
@@ -996,43 +990,43 @@ const games = [
     {
     title: "The Final Earth 2",
     image: "images/The Final Earth 2.jpg",
-    url: "games/The Final Earth 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/The%20Final%20Earth%202/",
     tags: ["adventure"]
   },
   {
     title: "The Impossible Quiz",
     image: "images/The Impossible Quiz.jpg",
-    url: "games/The Impossible Quiz/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/The%20Impossible%20Quiz/",
     tags: ["puzzle"]
   },
   {
     title: "This Is The Only Level",
     image: "images/This Is The Only Level.jpg",
-    url: "games/thisistheonlylevel/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/thisistheonlylevel/",
     tags: ["platformer"]
   },
   {
     title: "Time Shooter 2",
     image: "images/Time Shooter 2.jpg",
-    url: "games/Time Shooter 2/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Time%20Shooter%202/",
     tags: ["shooter"]
   },
   {
     title: "Time Shooter 3 S.W.A.T",
     image: "images/Time Shooter 3 S.W.A.T.jpg",
-    url: "games/Time Shooter 3 S.W.A.T/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Time%20Shooter%203%20S.W.A.T/",
     tags: ["shooter"]
   },
   {
     title: "Tiny Fishing",
     image: "images/Tiny Fishing.jpg",
-    url: "games/Tiny Fishing/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Tiny%20Fishing/",
     tags: ["simulation"]
   },
   {
     title: "Tomb Of The Mask",
     image: "images/Tomb Of The Mask.jpg",
-    url: "games/Tomb Of The Mask/index.html",
+    url: "geodmeeeeee.github.io/crabfish/Tomb Of The Mask",
     tags: ["simulation"]
   },
   {
@@ -1044,49 +1038,49 @@ const games = [
   {
     title: "Ultrakill",
     image: "images/Ultrakill.jpg",
-    url: "games/Ultrakill/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Ultrakill/",
     tags: ["shooter"]
   },
   {
     title: "Undertale",
     image: "images/Undertale.jpg",
-    url: "games/Undertale/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Undertale/",
     tags: ["adventure"]
   },
   {
     title: "Vex 4",
     image: "images/Vex 4.jpg",
-    url: "games/Vex 4/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Vex%204/",
     tags: ["platformer"]
   },
   {
     title: "Vex 7",
     image: "images/Vex 7.jpg",
-    url: "games/Vex 7/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Vex%207/",
     tags: ["platformer"]
   },
   {
     title: "Vex 8",
     image: "images/Vex 8.jpg",
-    url: "games/Vex 8/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Vex%208/",
     tags: ["platformer"]
   },
   {
     title: "War The Knights",
     image: "images/War The Knights.jpg",
-    url: "games/War The Knights/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/War%20The%20Knights/",
     tags: ["simulation"]
   },
   {
     title: "We Become What We Behold",
     image: "images/We Become What We Behold.jpg",
-    url: "games/We Become What We Behold/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/We%20Become%20What%20We%20Behold/",
     tags: ["simulation"]
   },
   {
     title: "Worlds Hardest Game",
     image: "images/Worlds Hardest Game.jpg",
-    url: "games/Worlds Hardest Game/index.html",
+    url: "https://geodmeeeeee.github.io/crabfish/Worlds%20Hardest%20Game/",
     tags: ["puzzle"]
   },
   {
