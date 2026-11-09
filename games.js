@@ -910,6 +910,12 @@ const games = [
     tags: ["simulation"]
   },  
   {
+    title: "Short Ride",
+    image: "images/Short Ride.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Short%20Ride/",
+    tags: ["driving"]
+  },  
+  {
     title: "Slope",
     image: "images/Slope.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Slope/",
