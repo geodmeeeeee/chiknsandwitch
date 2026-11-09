@@ -196,7 +196,7 @@ function escapeHtml(value) {
 
 function card(game, index, animationType = "", includeTags = true) {
   const title = escapeHtml(game.title);
-  const url = escapeHtml(getGameUrl(game));
+  const url = escapeHtml(game.url || "#");
   const tags = Array.isArray(game.tags) ? game.tags : [];
   const delay = animationType === "page"
     ? Math.min((index % gamesPerPage) * 16, 192)
