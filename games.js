@@ -64,6 +64,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "2 Player Crazy Racer",
+    image: "images/2playercrazyracer.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/2%20Player%20Crazy%20Racer/",
+    tags: ["puzzle"]
+  },
+  {
     title: "A Dance Of Fire And Ice",
     image: "images/A Dance Of Fire And Ice.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/A%20Dance%20Of%20Fire%20And%20Ice/",
