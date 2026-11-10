@@ -14,8 +14,8 @@ const filterDone = document.getElementById("filterDone");
 const gamePlayer = document.getElementById("gamePlayer");
 const gamePlayerTitle = document.getElementById("gamePlayerTitle");
 const gamePlayerClose = document.getElementById("gamePlayerClose");
-const gameMute = document.getElementById("gameMute");
 const gameFullscreen = document.getElementById("gameFullscreen");
+const gameOpenNewTab = document.getElementById("gameOpenNewTab");
 const gameFrame = document.getElementById("gameFrame");
 const gameFrameLoader = document.getElementById("gameFrameLoader");
 const pagination = document.getElementById("pagination");
@@ -316,16 +316,6 @@ function syncFullscreenButton() {
   gameFullscreen.title = label;
 }
 
-function syncMuteButton() {
-  if (!gameMute || !gameFrame) return;
-
-  const isMuted = gameFrame.muted;
-  const label = isMuted ? "Unmute game" : "Mute game";
-  gameMute.setAttribute("aria-label", label);
-  gameMute.title = label;
-  gameMute.dataset.muted = String(isMuted);
-}
-
 function buildFilterOptions() {
   const tags = [...new Set(games.flatMap(game => Array.isArray(game.tags) ? game.tags : []))]
     .sort((first, second) => first.localeCompare(second));
@@ -372,9 +362,8 @@ militaryTime.addEventListener("change", () => setMilitaryTimePreference(military
 batteryEnabled.addEventListener("change", () => setBatteryPreference(batteryEnabled.checked));
 syncStatusToggles();
 gamePlayerClose.addEventListener("click", () => closeGamePlayer());
-gameMute.addEventListener("click", () => {
-  gameFrame.muted = !gameFrame.muted;
-  syncMuteButton();
+gameOpenNewTab.addEventListener("click", () => {
+  window.open(gameFrame.src, "_blank", "noopener,noreferrer");
 });
 gamePlayer.addEventListener("click", event => {
   if (event.target === gamePlayer) closeGamePlayer();
@@ -393,7 +382,6 @@ gamePlayer.addEventListener("close", () => {
   gameFrame.src = "about:blank";
   if (gameFrameLoader) gameFrameLoader.classList.add("is-hidden");
   syncFullscreenButton();
-  syncMuteButton();
 });
 gameFrame.addEventListener("load", () => {
   if (gameFrameLoader) gameFrameLoader.classList.add("is-hidden");
