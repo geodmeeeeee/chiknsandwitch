@@ -976,6 +976,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Super Stickman Golf",
+    image: "images/Super Stickman Golf.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Super%20Stickman%20Golf/",
+    tags: ["sports"]
+  },
+  {
     title: "Table Tennis World Tour",
     image: "images/Table Tennis World Tour.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Table%20Tennis%20World%20Tour/",
