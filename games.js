@@ -977,7 +977,7 @@ const games = [
   },
   {
     title: "Super Stickman Golf",
-    image: "images/Super Stickman Golf.jpg",
+    image: "images/Super Stick Golf.jpg",
     url: "https://geodmeeeeee.github.io/awfawfafw/Super%20Stickman%20Golf/",
     tags: ["sports"]
   },
