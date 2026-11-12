@@ -352,6 +352,12 @@ const games = [
     tags: ["fighting"]
   },
   {
+    title: "Dadish",
+    image: "images/Dadish.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Dadish/",
+    tags: ["platformer"]
+  },
+  {
     title: "Death Run 3D",
     image: "images/Death Run 3D.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Death%20Run%203D/",
