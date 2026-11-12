@@ -568,16 +568,22 @@ const games = [
     tags: ["puzzle"]
   },
   {
-    title: "Henry Stickman Infiltrating The Airship ",
+    title: "Henry Stickman Infiltrating The Airship",
     image: "images/Henry Stickman Infiltrating The Airship.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Henry%20Stickman%20Infiltrating%20The%20Airship/",
     tags: ["puzzle"]
   },
   {
-    title: "Henry Stickman Stealing The Diamond ",
+    title: "Henry Stickman Stealing The Diamond",
     image: "images/Henry Stickman Stealing The Diamond.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Henry%20Stickman%20Stealing%20The%20Diamond/",
     tags: ["puzzle"]
+  },
+  {
+    title: "HexGL",
+    image: "images/HexGL.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/HexGL/",
+    tags: ["racing"]
   },
   {
     title: "Highway Bike Simulator",
