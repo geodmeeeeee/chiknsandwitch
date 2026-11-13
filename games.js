@@ -484,6 +484,12 @@ const games = [
     tags: ["sports"]
   },
   {
+    title: "Free Rider Jumps",
+    image: "Free Rider Jumps.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Free%20Rider%20Jumps/",
+    tags: ["driving"]
+  },
+  {
     title: "Fruit Ninja",
     image: "images/Fruit Ninja.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Fruit%20Ninja/",
@@ -1106,6 +1112,12 @@ const games = [
     image: "images/We Become What We Behold.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/We%20Become%20What%20We%20Behold/",
     tags: ["simulation"]
+  },
+  {
+    title: "Worlds Hardest Game 2",
+    image: "images/Worlds Hardest Game 2.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Worlds%20Hardest%20Game%202/",
+    tags: ["puzzle"]
   },
   {
     title: "Worlds Hardest Game",
