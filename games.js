@@ -442,6 +442,12 @@ const games = [
     tags: ["driving"]
   },
   {
+    title: "Evil Glitch",
+    image: "images/Evil Glitch.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Evil%20Glitch/",
+    tags: ["shooter"]
+  },
+  {
     title: "Fancy Pants Adventure",
     image: "images/Fancy Pants Adventure.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Fancy%20Pants%20Adventure/index.html",
