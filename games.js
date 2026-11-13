@@ -730,6 +730,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Merge Round Racers",
+    image: "Merge Round Racers.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Merge%20Round%20Racers/",
+    tags: ["driving"]
+  },
+  {
     title: "Mini Paint",
     image: "images/Mini Paint.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Mini%20Paint/",
