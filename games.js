@@ -1000,6 +1000,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Super Liquid Soccer",
+    image: "images/Super Liquid Soccer.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Super%20Liquid%20Soccer/",
+    tags: ["sports"]
+  },
+  {
     title: "Super Mario 64",
     image: "images/Super Mario 64.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Super%20Mario%2064/",
