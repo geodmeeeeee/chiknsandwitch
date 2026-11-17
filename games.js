@@ -184,6 +184,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Block The Pig",
+    image: "images/Block The Pig.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Block%20The%20Pig/",
+    tags: ["puzzle"]
+  },
+  {
     title: "Blocky Snakes",
     image: "images/Blocky Snakes.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Blocky%20Snakes/",
