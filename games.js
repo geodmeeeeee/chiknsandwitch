@@ -491,7 +491,7 @@ const games = [
   },
   {
     title: "Free Rider Jumps",
-    image: "Free Rider Jumps.jpg",
+    image:"vjr",
     url: "https://geodmeeeeee.github.io/awfawfafw/Free%20Rider%20Jumps/",
     tags: ["driving"]
   },
@@ -686,6 +686,12 @@ const games = [
     image: "images/Iron Snout.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Iron%20Snout/",
     tags: ["fighting"]
+  },
+  {
+    title: "Jacksmith",
+    image: "images/Jacksmith.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Jacksmith/",
+    tags: ["simulation"]
   },
   {
     title: "Jelly Mario",
