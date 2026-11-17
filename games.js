@@ -268,6 +268,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Cactus McCoy 2",
+    image: "images/Cactus McCoy 2.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Cactus%20McCoy%202/",
+    tags: ["platformer"]
+  },
+  {
     title: "Candy Crush",
     image: "images/Candy Crush.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Candy%20Crush/",
