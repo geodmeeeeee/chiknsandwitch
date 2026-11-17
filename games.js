@@ -532,6 +532,12 @@ const games = [
     tags: ["platformer", "shooter", "multiplayer"]
   },
   {
+    title: "Gimme The Airpod",
+    image: "images/Gimme The Airpod.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Gimme%20The%20Airpod/",
+    tags: ["fighting","multiplayer"]
+  },
+  {
     title: "Gladihoppers",
     image: "images/Gladihoppers.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Gladihoppers/",
@@ -755,7 +761,7 @@ const games = [
   },
   {
     title: "Merge Round Racers",
-    image: "Merge Round Racers.jpg",
+    image: "images/Merge Round Racers.jpg",
     url: "https://geodmeeeeee.github.io/awfawfafw/Merge%20Round%20Racers/",
     tags: ["driving"]
   },
