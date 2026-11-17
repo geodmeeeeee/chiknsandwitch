@@ -503,7 +503,7 @@ const games = [
   },
   {
     title: "Free Rider Jumps",
-    image:"vjr",
+    image:"images/Free Rider Jumps",
     url: "https://geodmeeeeee.github.io/awfawfafw/Free%20Rider%20Jumps/",
     tags: ["driving"]
   },
