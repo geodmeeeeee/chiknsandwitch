@@ -515,7 +515,7 @@ const games = [
   },
   {
     title: "Free Rider Jumps",
-    image:"images/Free Rider Jumps",
+    image:"images/Free Rider Jumps.jpg",
     url: "https://geodmeeeeee.github.io/awfawfafw/Free%20Rider%20Jumps/",
     tags: ["driving"]
   },
