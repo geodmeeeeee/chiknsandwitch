@@ -18,6 +18,11 @@ const gameFullscreen = document.getElementById("gameFullscreen");
 const gameOpenNewTab = document.getElementById("gameOpenNewTab");
 const gameFrame = document.getElementById("gameFrame");
 const gameFrameLoader = document.getElementById("gameFrameLoader");
+const changelogOpen = document.getElementById("changelogOpen");
+const changelogDialog = document.getElementById("changelogDialog");
+const changelogClose = document.getElementById("changelogClose");
+const changelogStatus = document.getElementById("changelogStatus");
+const changelogContent = document.getElementById("changelogContent");
 const pagination = document.getElementById("pagination");
 const previousPage = document.getElementById("previousPage");
 const nextPage = document.getElementById("nextPage");
@@ -348,6 +353,27 @@ function handleGameClick(event) {
 grid.addEventListener("click", handleGameClick, true);
 homeGames.addEventListener("click", handleGameClick, true);
 navigationTabs.forEach(tab => tab.addEventListener("click", () => showView(tab.dataset.view)));
+changelogOpen.addEventListener("click", async () => {
+  changelogDialog.showModal();
+  changelogStatus.textContent = "Loading changelog...";
+  changelogContent.textContent = "";
+
+  try {
+    const response = await fetch("changelog.txt", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+
+    const content = await response.text();
+    changelogContent.textContent = content;
+    changelogStatus.textContent = content.trim() ? "" : "No updates yet.";
+  } catch (error) {
+    changelogStatus.textContent = "Unable to load changelog.txt. Make sure the file is available.";
+    console.error("Unable to load changelog.txt.", error);
+  }
+});
+changelogClose.addEventListener("click", () => changelogDialog.close());
+changelogDialog.addEventListener("click", event => {
+  if (event.target === changelogDialog) changelogDialog.close();
+});
 darkMode.checked = localStorage.getItem("theme") !== "light";
 document.documentElement.dataset.theme = darkMode.checked ? "dark" : "light";
 darkMode.addEventListener("change", () => setTheme(darkMode.checked));

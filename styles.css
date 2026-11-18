@@ -314,6 +314,16 @@ body {
 }
 
 .home-link-icon { width: 19px; height: 19px; flex: none; object-fit: contain; }
+.changelog-icon {
+  width: 19px;
+  height: 19px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
 
 .home-link-button:hover { transform: translateY(-1px); background: var(--surface-hover); }
 
@@ -447,7 +457,8 @@ body {
 
 .filter-control { flex: none; }
 
-.filter-dialog {
+.filter-dialog,
+.changelog-dialog {
   width: min(500px, calc(100% - 32px));
   max-height: min(78vh, 620px);
   margin: auto;
@@ -462,20 +473,25 @@ body {
 }
 
 .filter-dialog[open],
+.changelog-dialog[open],
 .game-player-dialog[open] { animation: dialog-open 220ms ease-out both; }
 
 .filter-dialog.is-closing,
+.changelog-dialog.is-closing,
 .game-player-dialog.is-closing { animation: dialog-close 220ms ease-in both; }
 
 .filter-dialog::backdrop,
+.changelog-dialog::backdrop,
 .game-player-dialog::backdrop {
   animation: backdrop-open 220ms ease-out both;
 }
 
 .filter-dialog.is-closing::backdrop,
+.changelog-dialog.is-closing::backdrop,
 .game-player-dialog.is-closing::backdrop { animation: backdrop-close 220ms ease-in both; }
 
-.filter-dialog::backdrop {
+.filter-dialog::backdrop,
+.changelog-dialog::backdrop {
   background: rgba(0, 0, 0, .48);
   backdrop-filter: blur(3px);
 }
@@ -504,10 +520,14 @@ body {
   .filter-dialog[open],
   .filter-dialog.is-closing,
   .filter-dialog::backdrop,
+  .changelog-dialog[open],
+  .changelog-dialog.is-closing,
+  .changelog-dialog::backdrop,
   .game-player-dialog[open],
   .game-player-dialog.is-closing,
   .game-player-dialog::backdrop,
   .filter-dialog.is-closing::backdrop,
+  .changelog-dialog.is-closing::backdrop,
   .game-player-dialog.is-closing::backdrop,
   .page-view.is-entering-from-left,
   .page-view.is-entering-from-right { animation-duration: .01ms; }
@@ -517,6 +537,18 @@ body {
 }
 
 .filter-dialog fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+
+.changelog-dialog { overflow-y: auto; }
+.changelog-status { margin: 0 0 12px; color: var(--muted); }
+.changelog-status:empty { display: none; }
+.changelog-content {
+  margin: 0;
+  color: var(--text);
+  font: inherit;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
 
 .filter-dialog-header,
 .filter-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
