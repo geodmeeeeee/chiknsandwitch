@@ -532,6 +532,12 @@ const games = [
     tags: ["simulation"]
   },
   {
+    title: "Geometry Dash",
+    image: "images/Geometry Dash.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Geometry%20Dash/",
+    tags: ["clicker"]
+  },
+  {
     title: "Getaway Shootout",
     image: "images/Getaway Shootout.jpg",
     url: "geodmeeeeee.github.io/crabfish/Getaway Shootout",
