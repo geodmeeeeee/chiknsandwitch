@@ -11,3 +11,5 @@ Last Updated Nov 18 2026
 -Added Ravenfield
 
 - Added Veck.io
+
+-fixed free rider jumps game icon
