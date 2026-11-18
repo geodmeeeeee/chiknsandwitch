@@ -136,6 +136,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Bad Ice Cream 3",
+    image: "images/Bad Ice Cream 3.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Bad%20Ice%20Cream%203/",
+    tags: ["platformer"]
+  },
+  {
     title: "Bad Piggies",
     image: "images/Bad Piggies.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Bad%20Piggies/",
