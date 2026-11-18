@@ -688,6 +688,12 @@ const games = [
     tags: ["simulation","multiplayer"]
   },
   {
+    title: "Icy Purple Head 2",
+    image: "images/Icy Purple Head 2.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Icy%20Purple%20Head%202/",
+    tags: ["platformer"]
+  },
+  {
     title: "Idle Breakout",
     image: "images/Idle Breakout.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Idle%20Breakout/",
