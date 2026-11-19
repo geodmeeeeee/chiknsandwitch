@@ -376,6 +376,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Dadish 3",
+    image: "images/Dadish 3.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Dadish%203/",
+    tags: ["platformer"]
+  },
+  {
     title: "Dadish",
     image: "images/Dadish.jpg",
     url: "https://geodmeeeeee.github.io/awfawfafw/Dadish/",
