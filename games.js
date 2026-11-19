@@ -958,6 +958,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "Race Arena Survival King",
+    image: "images/Race Arena Survival King.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Race%20Survival%20Arena%20King/",
+    tags: ["driving"]
+  },
+  {
     title: "Ragdoll Archers",
     image: "images/Ragdoll Archers.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Ragdoll%20Archers/",
