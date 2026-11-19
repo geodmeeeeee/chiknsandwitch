@@ -1168,6 +1168,12 @@ const games = [
     tags: ["shooter"]
   },
   {
+    title: "Vex 3",
+    image: "images/Vex 3.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Vex%203/",
+    tags: ["platformer"]
+  },
+  {
     title: "Vex 4",
     image: "images/Vex 4.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Vex%204/",
