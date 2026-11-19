@@ -760,6 +760,12 @@ const games = [
     tags: ["simulator"]
   },
   {
+    title: "Kitchen Gun Game",
+    image: "images/Kitchen Gun Game.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Kitchen%20Gun%20Game/",
+    tags: ["shooter"]
+  },
+  {
     title: "Kour.io",
     image: "images/Kour.io.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Kour.io/",

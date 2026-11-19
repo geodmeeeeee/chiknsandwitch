@@ -1,15 +1,5 @@
-Last Updated Nov 18 2026
+Last Updated Nov 19 2026
 
--added Games Bad Ice Cream 3/Icy Purple Head 2
+-Added Dadish 3
 
-- Updated Polytrack to Version 0.6.0 
-
-- Added Changelog
-
-- Added Portal The Flash Version To Games
-
--Added Ravenfield
-
-- Added Veck.io
-
--fixed free rider jumps game icon
+-Added Kitchen Gun Game
