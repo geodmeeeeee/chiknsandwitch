@@ -286,6 +286,12 @@ const games = [
     tags: ["platformer"]
   },
   {
+    title: "Cactus McCoy",
+    image: "images/Cactus McCoy.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/Cactus%20McCoy/",
+    tags: ["platformer"]
+  },
+  {
     title: "Candy Crush",
     image: "images/Candy Crush.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/Candy%20Crush/",
