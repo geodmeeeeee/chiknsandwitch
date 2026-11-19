@@ -1144,6 +1144,12 @@ const games = [
     tags: ["puzzle"]
   },
   {
+    title: "The Stanley Parable",
+    image: "images/The Stanley Parable.jpg",
+    url: "https://geodmeeeeee.github.io/awfawfafw/The%20Stanley%20Parable%20Ultra%20Deluxe/stanleyparable.html",
+    tags: ["adventure"]
+  },
+  {
     title: "This Is The Only Level",
     image: "images/This Is The Only Level.jpg",
     url: "https://geodmeeeeee.github.io/crabfish/thisistheonlylevel/",
